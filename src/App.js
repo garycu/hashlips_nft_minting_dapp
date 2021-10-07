@@ -202,15 +202,20 @@ function App() {
         flex={1}
         ai={"center"}
         style={{ padding: 50, backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+
       >
         <div class="section-title">
-				<h2>// MINT YOUR SKYWALKER //</h2>
-			</div>
+          <h2>// MINT YOUR SKYWALKER //</h2>
+        </div>
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            <s.TextTitle
+              style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px" }}
+            >
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+            </s.TextTitle>
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -223,28 +228,24 @@ function App() {
               borderRadius: 24,
               border: "4px solid white",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              backgroundImage: (claimingNft ? 'url("/config/images/spaceanimation2.gif")' : 'url("/config/images/darkstars.png")'),
             }}
           >
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 35,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
+                lineHeight: "75%",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+
+              {onSuccessScreen ? <div>MINT SUCCESSFUL!</div> : <div>{claimingNft ? null :
+                <div>1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL}</div>}</div>
+              }
             </s.TextTitle>
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                color: "var(--primary-text)",
-              }}
-            >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-              </StyledLink>
-            </s.TextDescription>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -265,25 +266,18 @@ function App() {
               </>
             ) : (
               <>
-              { (onSuccessScreen || claimingNft) ? null :
-              <div>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
-                </s.TextTitle>
-                <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  Excluding gas fees.
-                </s.TextDescription>
-                </div>
-            }
+                {(onSuccessScreen || claimingNft) ? null :
+                  <div>
+                    <s.TextDescription
+                      style={{ textAlign: "center", color: "var(--accent-text)" }}
+                    >
+                      Excluding gas fees.
+                    </s.TextDescription>
+                  </div>
+                }
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
-                blockchain.smartContract === null ? (
+                  blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
                       style={{
@@ -291,7 +285,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      Connect to the {CONFIG.NETWORK.NAME} network
+                      To mint, connect your MetaMask wallet to the {CONFIG.NETWORK.NAME} network. After, you’ll be able to choose how many SkywalkerZ to mint.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -319,74 +313,99 @@ function App() {
                   </s.Container>
                 ) : (
                   <>
-                  {onSuccessScreen ? <div><h1>True</h1></div> :  
-                  <div>
-                    <s.TextDescription 
-                      style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                      }}
-                    >
-                      {feedback}
-                    </s.TextDescription>
-                  
-                    <s.SpacerMedium />
-                    {claimingNft ? <div><img src="https://media.giphy.com/media/26xBEamXwaMSUbV72/giphy.gif"/></div> :
-                    <div>
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          decrementMintAmount();
-                        }}
-                      >
-                        -
-                      </StyledRoundButton>
-                      <s.SpacerMedium />
-                      <s.TextDescription
-                        style={{
-                          textAlign: "center",
-                          color: "var(--accent-text)",
-                        }}
-                      >
-                        {mintAmount}
-                      </s.TextDescription>
-                      <s.SpacerMedium />
-                      <StyledRoundButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          incrementMintAmount();
-                        }}
-                      >
-                        +
-                      </StyledRoundButton>
-                    </s.Container>
-                    <s.SpacerSmall />
-                    <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                      <StyledButton
-                        disabled={claimingNft ? 1 : 0}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          claimNFTs();
-                          getData();
-                        }}
-                      >
-                        {claimingNft ? "BUSY" : "BUY"}
-                      </StyledButton>
-                    </s.Container>
-                    </div>}
-                </div>
-                }
+                    {onSuccessScreen ?
+                      <div>
+                        <s.TextDescription
+                          style={{ textAlign: "center", color: "var(--accent-text)" }}
+                        >
+                          View your new SkywalkerZ NFT(s) on &nbsp;
+                          <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                            {CONFIG.MARKETPLACE}
+                          </StyledLink>!
+                        </s.TextDescription>
+                      </div> :
+                      <div>
+                        {claimingNft ?
+                          <s.TextTitle
+                            style={{
+                              textAlign: "center",
+                              color: "var(--accent-text)",
+                              paddingBottom: "25px",
+                              fontSize: 40,
+                              fontWeight: "bold",
+                              lineHeight: "100%",
+                              textShadow: "5px 5px 5px #000000",
+                            }}
+                          >
+                            MINTING<br/>YOUR<br/>SKYWALKERZ<div class="loading"></div>
+                          </s.TextTitle>
+                          :
+                          <div>
+                            <s.TextDescription
+                              style={{
+                                textAlign: "center",
+                                color: "var(--accent-text)",
+                              }}
+                            >
+                              {feedback}
+                            </s.TextDescription>
+                            <s.SpacerMedium />
+                            {claimingNft ? null :
+                              <div>
+                                <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                  <StyledRoundButton
+                                    style={{ lineHeight: 0.4 }}
+                                    disabled={claimingNft ? 1 : 0}
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      decrementMintAmount();
+                                    }}
+                                  >
+                                    -
+                                  </StyledRoundButton>
+                                  <s.SpacerMedium />
+                                  <s.TextDescription
+                                    style={{
+                                      textAlign: "center",
+                                      color: "var(--accent-text)",
+                                    }}
+                                  >
+                                    {mintAmount}
+                                  </s.TextDescription>
+                                  <s.SpacerMedium />
+                                  <StyledRoundButton
+                                    disabled={claimingNft ? 1 : 0}
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      incrementMintAmount();
+                                    }}
+                                  >
+                                    +
+                                  </StyledRoundButton>
+                                </s.Container>
+                                <s.SpacerSmall />
+                                <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                  <StyledButton
+                                    disabled={claimingNft ? 1 : 0}
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      claimNFTs();
+                                      getData();
+                                    }}
+                                  >
+                                    {claimingNft ? "BUSY" : "BUY"}
+                                  </StyledButton>
+                                </s.Container>
+                              </div>}
+                          </div>
+                        }
+                      </div>
+                    }
                   </>
                 )}
               </>
             )}
-            <s.SpacerMedium />
           </s.Container>
-          <s.SpacerLarge />
         </ResponsiveWrapper>
         <s.SpacerMedium />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
@@ -410,6 +429,18 @@ function App() {
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            Contract address: &nbsp;
+            <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+              {CONFIG.CONTRACT_ADDRESS}
+            </StyledLink>
           </s.TextDescription>
         </s.Container>
       </s.Container>
