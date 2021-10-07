@@ -100,6 +100,7 @@ function App() {
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [onSuccessScreen, setOnSuccessScreen] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -129,6 +130,7 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
+    setOnSuccessScreen(false);
     blockchain.smartContract.methods
       .mint(mintAmount)
       .send({
@@ -148,6 +150,7 @@ function App() {
           `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
+        setOnSuccessScreen(true);
         dispatch(fetchData(blockchain.account));
       });
   };
@@ -262,6 +265,8 @@ function App() {
               </>
             ) : (
               <>
+              { (onSuccessScreen || claimingNft) ? null :
+              <div>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
@@ -274,6 +279,8 @@ function App() {
                 >
                   Excluding gas fees.
                 </s.TextDescription>
+                </div>
+            }
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
@@ -312,7 +319,9 @@ function App() {
                   </s.Container>
                 ) : (
                   <>
-                    <s.TextDescription
+                  {onSuccessScreen ? <div><h1>True</h1></div> :  
+                  <div>
+                    <s.TextDescription 
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
@@ -320,7 +329,10 @@ function App() {
                     >
                       {feedback}
                     </s.TextDescription>
+                  
                     <s.SpacerMedium />
+                    {claimingNft ? <div><img src="https://media.giphy.com/media/26xBEamXwaMSUbV72/giphy.gif"/></div> :
+                    <div>
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
@@ -365,6 +377,9 @@ function App() {
                         {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
                     </s.Container>
+                    </div>}
+                </div>
+                }
                   </>
                 )}
               </>
