@@ -1,6 +1,8 @@
 // log
 import store from "../store";
 
+import Web3 from "web3";
+
 const fetchDataRequest = () => {
   return {
     type: "CHECK_DATA_REQUEST",
@@ -20,6 +22,13 @@ const fetchDataFailed = (payload) => {
     payload: payload,
   };
 };
+
+const fetchTotalSupplySuccess = (payload) => {
+  return {
+    type: "CHECK_TOTAL_SUPPLY_SUCCESS",
+    payload: payload,
+  }
+}
 
 export const fetchData = () => {
   return async (dispatch) => {
@@ -51,13 +60,21 @@ export const fetchData = () => {
 export const fetchTotalSupply = () => {
   return async (dispatch) => {
 
+    const abiResponse = await fetch("/config/abi.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const abi = await abiResponse.json();
+
     // update to config
     const smartContractAddress = "0x5b733f8a3209a2eabbe64eba915eb433ad508e1d";
     
     let totalSupply = 0;
       const web3 = new Web3("https://rinkeby.infura.io/v3/7c18daa2505046499e29c8f240e38258");
       const contract = new web3.eth.Contract(
-        MySmartContract,
+        abi,
         smartContractAddress // test chain address
       );
       const _totalSupply = await contract.methods.totalSupply().call();
