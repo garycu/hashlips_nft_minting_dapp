@@ -8,6 +8,11 @@ const initialState = {
 
 const dataReducer = (state = initialState, action) => {
   switch (action.type) {
+    case "CHECK_TOTAL_SUPPLY_SUCCESS":
+      return {
+        ...state,
+        totalSupply: action.payload.totalSupply,
+      };
     case "CHECK_DATA_REQUEST":
       return {
         ...state,

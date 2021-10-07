@@ -46,3 +46,23 @@ export const fetchData = () => {
     }
   };
 };
+
+
+export const fetchTotalSupply = () => {
+  return async (dispatch) => {
+
+    // update to config
+    const smartContractAddress = "0x5b733f8a3209a2eabbe64eba915eb433ad508e1d";
+    
+    let totalSupply = 0;
+      const web3 = new Web3("https://rinkeby.infura.io/v3/7c18daa2505046499e29c8f240e38258");
+      const contract = new web3.eth.Contract(
+        MySmartContract,
+        smartContractAddress // test chain address
+      );
+      const _totalSupply = await contract.methods.totalSupply().call();
+      totalSupply = _totalSupply;
+
+    dispatch(fetchTotalSupplySuccess({totalSupply: totalSupply}));
+  }
+}
