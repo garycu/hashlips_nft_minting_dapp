@@ -121,7 +121,7 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
-  dispatch(fetchTotalSupply());
+  // dispatch(fetchTotalSupply());
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
