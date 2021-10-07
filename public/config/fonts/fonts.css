@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fontawesome-webfont.eot?v=4.7.0');
+	src: url('fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+		url('fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+		url('fontawesome-webfont.woff?v=4.7.0') format('woff'),
+		url('fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+		url('fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RobotoBold';
+	src: url('RobotoBold.eot');
+	src: url('RobotoBold.eot') format('embedded-opentype'),
+		url('RobotoBold.woff2') format('woff2'),
+		url('RobotoBold.woff') format('woff'),
+		url('RobotoBold.ttf') format('truetype'),
+		url('RobotoBold.svg#RobotoBold') format('svg');
+}
+
+@font-face {
+	font-family: 'MontserratRegular';
+	src: url('MontserratRegular.eot');
+	src: url('MontserratRegular.eot') format('embedded-opentype'),
+		url('MontserratRegular.woff2') format('woff2'),
+		url('MontserratRegular.woff') format('woff'),
+		url('MontserratRegular.ttf') format('truetype'),
+		url('MontserratRegular.svg#MontserratRegular') format('svg');
+}
+
+@font-face {
+	font-family: 'MontserratBold';
+	src: url('MontserratBold.eot');
+	src: url('MontserratBold.eot') format('embedded-opentype'),
+		url('MontserratBold.woff2') format('woff2'),
+		url('MontserratBold.woff') format('woff'),
+		url('MontserratBold.ttf') format('truetype'),
+		url('MontserratBold.svg#MontserratBold') format('svg');
+}
+
+@font-face {
+	font-family: 'MontserratBoldItalic';
+	src: url('MontserratBoldItalic.eot');
+	src: url('MontserratBoldItalic.eot') format('embedded-opentype'),
+		url('MontserratBoldItalic.woff2') format('woff2'),
+		url('MontserratBoldItalic.woff') format('woff'),
+		url('MontserratBoldItalic.ttf') format('truetype'),
+		url('MontserratBoldItalic.svg#MontserratBoldItalic') format('svg');
+}
+
+@font-face {
+	font-family: 'OswaldRegular';
+	src: url('OswaldRegular.eot');
+	src: url('OswaldRegular.eot') format('embedded-opentype'),
+		url('OswaldRegular.woff2') format('woff2'),
+		url('OswaldRegular.woff') format('woff'),
+		url('OswaldRegular.ttf') format('truetype'),
+		url('OswaldRegular.svg#OswaldRegular') format('svg');
+}

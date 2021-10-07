@@ -1,0 +1,644 @@
+/*////////////////////////////////////////////////////// Responsive CSS Structure //////////////////////////////////////////////////////*/
+@media (min-width: 1200px) and (max-width: 1920px){
+}
+
+@media (min-width: 1800px) and (max-width: 1899px){
+.btn { font-size: 45px; line-height: 55px; }
+.btn-small { font-size: 40px; line-height: 50px; }
+.btn-big { font-size: 55px; line-height: 65px; }
+.section-title { font-size: 90px; line-height: 100px; }
+.block-title { font-size: 45px; line-height: 50px; }
+
+.banner-section .space-transparan1-img { width: 525px; }
+.banner-title { font-size: 80px; line-height: 80px; }
+.services-section .service-block .title { font-size: 30px; line-height: 35px; }
+.services-section .service-block p { font-size: 25px; line-height: 30px; }
+.skywalker-section p { font-size: 35px; line-height: 45px; }
+.launch-time-content .is-countdown { font-size: 125px; }
+.miss-drop-block span { font-size: 30px; line-height: 35px; margin-bottom: 40px; }
+.miss-drop-block .join-follow-links a { font-size: 25px; line-height: 30px; }
+.miss-drop-block .join-follow-links a img { width: 45px; }
+.faq-section .faq-shape { width: 325px; }
+.faq-block p { font-size: 30px; line-height: 38px; }
+.faq-section .civics-space { width: 200px; }
+.our-philosophy-block .detail p { font-size: 25px; line-height: 30px; }
+
+.mint-section .mint-detail p { font-size: 35px; line-height: 45px; }
+}
+
+@media (min-width: 1700px){
+.container { max-width: 1600px; }
+}
+
+@media (min-width: 1700px) and (max-width: 1799px){
+.btn { font-size: 45px; line-height: 55px; }
+.btn-small { font-size: 40px; line-height: 50px; }
+.btn-big { font-size: 55px; line-height: 65px; }
+.section-title { font-size: 90px; line-height: 100px; }
+.block-title { font-size: 45px; line-height: 50px; }
+
+.banner-section .space-transparan1-img { width: 525px; }
+.banner-title { font-size: 75px; line-height: 75px; }
+.services-section .service-block .title { font-size: 30px; line-height: 35px; }
+.services-section .service-block p { font-size: 25px; line-height: 30px; }
+.skywalker-section p { font-size: 35px; line-height: 45px; }
+.launch-time-content .is-countdown { font-size: 125px; }
+.miss-drop-block span { font-size: 30px; line-height: 35px; margin-bottom: 40px; }
+.miss-drop-block .join-follow-links a { font-size: 25px; line-height: 30px; }
+.miss-drop-block .join-follow-links a img { width: 45px; }
+.faq-section .faq-shape { width: 300px; }
+.faq-block p { font-size: 30px; line-height: 38px; }
+.faq-section .civics-space { width: 200px; }
+.our-philosophy-block .detail p { font-size: 25px; line-height: 30px; }
+.mint-section .mint-detail p { font-size: 35px; line-height: 45px; }
+
+.dream-dao p {font-size: 35px; line-height: 35px;}
+.dream-dao .image-text .text p {font-size: 30px; line-height: 35px;}
+.fund-section p {font-size: 35px; line-height: 40px;}
+}
+
+@media (min-width: 1600px) and (max-width: 1699px){
+.container { max-width: 1500px; }
+.btn { font-size: 40px; line-height: 50px; }
+.btn-small { font-size: 35px; line-height: 45px; }
+.btn-big { font-size: 45px; line-height: 55px; }
+.section-title { font-size: 60px; line-height: 70px; }
+.block-title { font-size: 35px; line-height: 40px; }
+
+.banner-section .space-transparan1-img { width: 450px; }
+.banner-title { font-size: 60px; line-height: 60px; }
+.services-section .service-block .title { font-size: 30px; line-height: 35px; }
+.services-section .service-block p { font-size: 22px; line-height: 28px; }
+.skywalker-section p { font-size: 30px; line-height: 40px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 25px; line-height: 25px; }
+.launch-time-section { padding: 220px 0 250px; }
+.launch-time-content .is-countdown { font-size: 100px; }
+.miss-drop-block span { font-size: 25px; line-height: 30px; margin-bottom: 30px; }
+.miss-drop-block .join-follow-links a { font-size: 22px; line-height: 28px; margin: 0 40px; }
+.miss-drop-block .join-follow-links a img { width: 45px; }
+.faq-section .faq-shape { width: 300px; }
+.faq-block p { font-size: 25px; line-height: 35px; }
+.faq-section .civics-space { width: 200px; top: 360px; right: 0;}
+.our-philosophy-section { padding-top: 75px; }
+.our-philosophy-block .detail p { font-size: 25px; line-height: 30px; }
+
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 40px; }
+.mint-connect-block .block-title span { font-size: 30px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 20px; }
+.mint-section .mint-detail p { font-size: 30px; line-height: 40px; }
+.mint-connect-block .form-control { font-size: 135px; }
+
+.dream-dao p {font-size: 30px; line-height: 30px;}
+.dream-dao .image-text .text p {font-size: 25px; line-height: 30px;}
+.fund-section p {font-size: 30px; line-height: 35px;}
+.dream-dao .heading .image img.head {max-width: 680px;}
+.fund-section .heading .image img {max-width: 992px;}
+}
+
+@media (min-width: 1500px) and (max-width: 1599px){
+.container { max-width: 1400px; }
+.btn { font-size: 40px; line-height: 50px; }
+.btn-small { font-size: 35px; line-height: 45px; }
+.btn-big { font-size: 45px; line-height: 55px; }
+.section-title { font-size: 60px; line-height: 70px; }
+.block-title { font-size: 35px; line-height: 40px; }
+
+.banner-section .space-transparan1-img { width: 450px; }
+.banner-title { font-size: 60px; line-height: 60px; }
+.services-section .service-block .title { font-size: 30px; line-height: 35px; }
+.services-section .service-block p { font-size: 22px; line-height: 28px; }
+.skywalker-section p { font-size: 30px; line-height: 40px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 25px; line-height: 25px; }
+.launch-time-section { padding: 220px 0 250px; }
+.launch-time-content .is-countdown { font-size: 90px; }
+.miss-drop-block span { font-size: 25px; line-height: 30px; margin-bottom: 30px; }
+.miss-drop-block .join-follow-links a { font-size: 22px; line-height: 28px; margin: 0 40px; }
+.miss-drop-block .join-follow-links a img { width: 45px; }
+.faq-section .faq-shape { width: 300px; }
+.faq-block p { font-size: 25px; line-height: 35px; }
+.faq-section .civics-space { width: 175px; top: 250px; }
+.our-philosophy-section { padding-top: 75px; }
+.our-philosophy-block .detail p { font-size: 25px; line-height: 30px; }
+
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 40px; }
+.mint-connect-block .block-title span { font-size: 30px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 20px; }
+.mint-section .mint-detail p { font-size: 30px; line-height: 40px; }
+.mint-connect-block .form-control { font-size: 125px; }
+
+.dream-dao p {font-size: 30px; line-height: 30px;}
+.dream-dao .image-text .text p {font-size: 25px; line-height: 30px;}
+.fund-section p {font-size: 30px; line-height: 35px;}
+.dream-dao .heading .image img.head {max-width: 600px;}
+.fund-section .heading .image img {max-width: 900px;}
+}
+
+@media (min-width: 1400px) and (max-width: 1499px){
+.container { max-width: 1300px; }
+.btn { font-size: 35px; line-height: 40px; }
+.btn-small { font-size: 30px; line-height: 35px; }
+.btn-big { font-size: 40px; line-height: 50px; }
+.section-title { font-size: 50px; line-height: 50px; margin-bottom: 50px; }
+.block-title { font-size: 30px; line-height: 35px; }
+
+.h-social-icons ul li img { width: 25px; }
+.h-navigation ul li { font-size: 20px; line-height: 25px; }
+
+.banner-section .space-transparan1-img { width: 400px; top: 30px; }
+.banner-section .space-earth-img { width: 300px; }
+.banner-section .space-transparan2-img { bottom: 85px; }
+.banner-section .space-comet-img { left: 125px; bottom: 50px; }
+.banner-title { font-size: 50px; line-height: 50px; }
+.services-section { padding: 70px 35px 175px; }
+.services-section .row { margin: 0 -35px; }
+.services-section [class^=col-] { padding: 0 35px; }
+.services-section .service-block .title { font-size: 25px; line-height: 30px; }
+.services-section .service-block p { font-size: 20px; line-height: 25px; }
+.skywalker-section p { font-size: 25px; line-height: 30px; }
+.skywalker-section { padding: 0 20px 50px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 25px; line-height: 25px; }
+.launch-time-section { padding: 220px 0 200px; }
+.launch-time-content .is-countdown { font-size: 60px; }
+.miss-drop-block span { font-size: 25px; line-height: 30px; margin-bottom: 30px; }
+.miss-drop-block .join-follow-links a { font-size: 20px; line-height: 25px; margin: 0 25px; }
+.miss-drop-block .join-follow-links a img { width: 35px; }
+.faq-section .faq-shape { width: 300px; }
+.faq-block { padding: 19px 30px; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; }
+.faq-block p { font-size: 20px; line-height: 25px; }
+.faq-section .civics-space { width: 175px; top: 355px; right: 0;}
+.our-philosophy-section { padding-top: 75px; }
+.our-philosophy-section .our-philosophy-block { padding: 0 70px; margin-bottom: 50px; }
+.our-philosophy-block .detail p { font-size: 20px; line-height: 25px; }
+.launch-time-section .astronaut { bottom: 75px; width: 300px; }
+
+.mint-section .mint-detail { max-width: 700px; }
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 30px; }
+.mint-connect-block .block-title span { font-size: 30px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 0; }
+.mint-section .mint-detail p { font-size: 25px; line-height: 35px; }
+.mint-connect-block .form-control { width: 200px; height: 175px; font-size: 125px; }
+.mint-connect-block .join-seo-dream-btn .btn { font-size: 30px; line-height: 35px; margin: 15px 0; }
+
+/* .footer { padding-bottom: 50px; } */
+
+.dream-dao p {font-size: 25px; line-height: 30px;}
+.dream-dao .image-text .text p {font-size: 25px; line-height: 30px;}
+.dream-dao .heading .image img.head {max-width: 600px;}
+.dream-dao .image-text .img {height: 325px;}
+.fund-section p {font-size: 25px; line-height: 30px;}
+.fund-section .image-text .text span {font-size: 25px; line-height: 30px;}
+.fund-section .heading .image img {max-width: 900px;}
+}
+
+@media (min-width: 1300px) and (max-width: 1399px){
+.btn { font-size: 30px; line-height: 35px; }
+.btn-small { font-size: 25px; line-height: 30px; }
+.btn-big { font-size: 35px; line-height: 40px; padding: 12px 35px; }
+.section-title { font-size: 40px; line-height: 40px; margin-bottom: 30px; }
+.block-title { font-size: 30px; line-height: 35px; }
+
+.h-social-icons ul li img { width: 25px; }
+.h-navigation ul li { font-size: 20px; line-height: 25px; }
+
+.banner-section .space-transparan1-img { width: 400px; top: 30px; }
+.banner-section .space-earth-img { width: 300px; }
+.banner-section .space-transparan2-img { bottom: 85px; }
+.banner-section .space-comet-img { left: 125px; bottom: 50px; }
+.banner-title { font-size: 50px; line-height: 50px; }
+.services-section { padding: 70px 35px 175px; }
+.services-section .row { margin: 0 -35px; }
+.services-section [class^=col-] { padding: 0 35px; }
+.services-section .service-block .title { font-size: 22px; line-height: 28px; }
+.services-section .service-block p { font-size: 18px; line-height: 22px; }
+.skywalker-section p { font-size: 22px; line-height: 28px; }
+.skywalker-section { padding: 0 20px 50px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 25px; line-height: 25px; }
+.launch-time-section { padding: 220px 0 200px; }
+.launch-time-content .is-countdown { font-size: 60px; }
+.miss-drop-block span { font-size: 25px; line-height: 30px; margin-bottom: 30px; }
+.miss-drop-block .join-follow-links a { font-size: 20px; line-height: 25px; margin: 0 25px; }
+.miss-drop-block .join-follow-links a img { width: 35px; }
+.faq-section .faq-shape { width: 300px; }
+.faq-block { padding: 19px 30px; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; }
+.faq-block p { font-size: 20px; line-height: 25px; }
+.faq-section .civics-space { width: 175px; top: 250px; }
+.our-philosophy-section { padding-top: 75px; }
+.our-philosophy-section .our-philosophy-block { padding: 0 50px; margin-bottom: 50px; }
+.our-philosophy-block .detail p { font-size: 20px; line-height: 25px; }
+.launch-time-section .astronaut { bottom: 75px; width: 300px; }
+
+.mint-section .mint-detail { max-width: 600px; }
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 30px; }
+.mint-connect-block .block-title span { font-size: 25px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 0; }
+.mint-section .mint-detail p { font-size: 22px; line-height: 30px; }
+.mint-connect-block .form-control { width: 175px; height: 150px; font-size: 100px; }
+.mint-connect-block .join-seo-dream-btn .btn { font-size: 25px; line-height: 30px; margin: 15px 0; }
+
+/* .footer { padding-bottom: 50px; } */
+
+.dream-dao p {font-size: 22px; line-height: 28px;}
+.dream-dao .image-text .text p {font-size: 22px; line-height: 28px;}
+.dream-dao .heading .image img.head {max-width: 600px;}
+.dream-dao .image-text .img {height: 295px;}
+.fund-section p {font-size: 22px; line-height: 28px;}
+.fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
+.fund-section .heading .image img {max-width: 900px;}
+}
+
+@media (min-width: 1200px) and (max-width: 1299px){
+.btn { font-size: 30px; line-height: 35px; }
+.btn-small { font-size: 25px; line-height: 30px; }
+.btn-big { font-size: 35px; line-height: 40px; padding: 12px 35px; }
+.section-title { font-size: 40px; line-height: 40px; margin-bottom: 30px; }
+.block-title { font-size: 30px; line-height: 35px; }
+
+.h-social-icons ul li img { width: 25px; }
+.h-navigation ul li { font-size: 20px; line-height: 25px; }
+
+.banner-section .space-transparan1-img { width: 400px; top: 30px; }
+.banner-section .space-earth-img { width: 300px; }
+.banner-section .space-transparan2-img { width: 325px; bottom: 85px; }
+.banner-section .space-comet-img { left: 125px; bottom: 50px; width: 375px; }
+.banner-title { font-size: 50px; line-height: 50px; }
+.services-section { padding: 70px 35px 175px; }
+.services-section .row { margin: 0 -35px; }
+.services-section [class^=col-] { padding: 0 35px; }
+.services-section .service-block .title { font-size: 22px; line-height: 28px; }
+.services-section .service-block p { font-size: 18px; line-height: 22px; }
+.skywalker-section p { font-size: 22px; line-height: 28px; }
+.skywalker-section { padding: 0 20px 50px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 22px; line-height: 22px; }
+.launch-time-section { padding: 220px 0 200px; }
+.launch-time-content .is-countdown { font-size: 60px; }
+.miss-drop-block span { font-size: 22px; line-height: 28px; margin-bottom: 30px; }
+.miss-drop-block .join-follow-links a { font-size: 18px; line-height: 22px; margin: 0 25px; }
+.miss-drop-block .join-follow-links a img { width: 35px; }
+.faq-block { padding: 19px 30px; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; }
+.faq-block p { font-size: 20px; line-height: 25px; }
+.faq-section .faq-shape { width: 300px; }
+.faq-section .civics-space { width: 150px; top: 250px; }
+.our-philosophy-section { padding-top: 75px; }
+.our-philosophy-section .our-philosophy-block { padding: 0 50px; margin-bottom: 50px; }
+.our-philosophy-block .detail p { font-size: 20px; line-height: 25px; }
+.launch-time-section .astronaut { bottom: 75px; width: 300px; }
+
+.mint-section .mint-detail { max-width: 600px; }
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 30px; }
+.mint-connect-block .block-title span { font-size: 25px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 0; }
+.mint-section .mint-detail p { font-size: 22px; line-height: 30px; }
+.mint-connect-block .form-control { width: 175px; height: 150px; font-size: 100px; }
+.mint-connect-block .join-seo-dream-btn .btn { font-size: 25px; line-height: 30px; margin: 15px 0; }
+
+/* .footer { padding-bottom: 50px; } */
+
+.dream-dao p {font-size: 22px; line-height: 28px;}
+.dream-dao .image-text .text p {font-size: 22px; line-height: 28px;}
+.dream-dao .heading .image img.head {max-width: 450px;}
+.dream-dao .image-text .img {height: 295px;}
+.fund-section p {font-size: 22px; line-height: 28px;}
+.fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
+.fund-section .heading .image img {max-width: 750px;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.btn { font-size: 25px; line-height: 30px; }
+.btn-small { font-size: 20px; line-height: 25px; }
+.btn-big { font-size: 30px; line-height: 35px; padding: 12px 25px; }
+.section-title { font-size: 30px; line-height: 35px; margin-bottom: 30px; }
+.block-title { font-size: 25px; line-height: 30px; }
+
+.h-social-icons ul li img { width: 25px; }
+.h-navigation ul li { font-size: 18px; line-height: 22px; }
+
+.banner-section .space-transparan1-img { width: 300px; top: 30px; }
+.banner-section .space-earth-img { width: 300px; }
+.banner-section .space-transparan2-img { width: 275px; right: 75px; bottom: 85px; }
+.banner-section .space-comet-img { left: 125px; bottom: 50px; width: 375px; }
+.banner-title { font-size: 45px; line-height: 45px; }
+.services-section { padding: 50px 20px 100px; }
+.services-section .row { margin: 0 -20px; }
+.services-section [class^=col-] { padding: 0 20px; }
+.services-section .service-block .title { font-size: 22px; line-height: 28px; }
+.services-section .service-block p { font-size: 18px; line-height: 22px; }
+.skywalker-section p { font-size: 22px; line-height: 28px; margin-bottom: 30px; }
+.skywalker-section { padding: 0 20px 50px; }
+.skywalker-section .skywalker-logo img { width: 500px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 22px; line-height: 22px; }
+.launch-time-section { padding: 150px 0; }
+.launch-time-content .is-countdown { font-size: 50px; }
+.miss-drop-block span { font-size: 20px; line-height: 25px; margin-bottom: 20px; }
+.miss-drop-block .join-follow-links a { font-size: 18px; line-height: 22px; margin: 0 15px; }
+.faq-section { padding: 105px 0; }
+.faq-section .faq-content { z-index: 9; }
+.faq-section .faq-shape { width: 250px; }
+.miss-drop-block .join-follow-links a img { width: 35px; }
+.faq-block { padding: 19px 30px; margin-bottom: 40px; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; }
+.faq-block .block-title { margin-bottom: 10px; }
+.faq-block p { font-size: 20px; line-height: 25px; }
+.faq-section .civics-space { width: 135px; top: 200px; }
+.our-philosophy-section { padding-top: 50px; }
+.our-philosophy-section .our-philosophy-block { padding: 0 35px; margin-bottom: 35px; }
+.our-philosophy-block .detail p { font-size: 18px; line-height: 22px; }
+.launch-time-section .astronaut { bottom: 50px; width: 200px; }
+
+.mint-section .mint-detail { max-width: 550px; }
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 20px; }
+.mint-connect-block .block-title span { font-size: 25px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 0; }
+.mint-section .mint-detail p { font-size: 22px; line-height: 30px; }
+.mint-connect-block .form-control { width: 175px; height: 150px; font-size: 100px; }
+.mint-connect-block .join-seo-dream-btn .btn { font-size: 22px; line-height: 30px; margin: 15px 0; }
+
+/* .footer { padding-bottom: 50px; } */
+.footer img { margin-top: -225px; }
+
+.dream-dao p {font-size: 22px; line-height: 28px;}
+.dream-dao .image-text .text p {font-size: 22px; line-height: 28px;}
+.dream-dao .heading .image img.head {max-width: 450px;}
+.dream-dao .heading .image img {max-width: 400px;}
+.dream-dao .image-text .img {height: 250px;}
+.fund-section p {font-size: 22px; line-height: 28px;}
+.fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
+.fund-section .heading .image img {max-width: 750px;}
+.fund-section .image-text .img img {width: 240px; height: 240px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+.btn { font-size: 20px; line-height: 25px; }
+.btn-small { font-size: 20px; line-height: 25px; }
+.btn-big { font-size: 25px; line-height: 30px; padding: 12px 25px; }
+.section-title { font-size: 30px; line-height: 35px; margin-bottom: 30px; }
+.block-title { font-size: 25px; line-height: 30px; }
+
+.h-social-icons ul li img { width: 25px; }
+.h-navigation ul li { font-size: 17px; line-height: 22px; }
+
+.banner-section .space-transparan1-img { width: 225px; top: 10px; }
+.banner-section .space-earth-img { width: 300px; }
+.banner-section .space-transparan2-img { width: 225px; right: 0; bottom: 85px; }
+.banner-section .space-comet-img { left: 0; bottom: 0; width: 250px; }
+.banner-title { font-size: 35px; line-height: 35px; }
+.services-section { padding: 50px 20px 100px; }
+.services-section .row { margin: 0 -20px; }
+.services-section [class^=col-] { padding: 0 20px; }
+.services-section .service-block .title { font-size: 22px; line-height: 28px; }
+.services-section .service-block p { font-size: 18px; line-height: 22px; }
+.skywalker-section p { font-size: 22px; line-height: 28px; margin-bottom: 30px; }
+.skywalker-section { padding: 0 0 50px; }
+.services-section .services-image { margin-bottom: 35px; }
+.services-section .service-block { padding-left: 70px; }
+.services-section .service-block .icon { width: 55px; height: 55px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; }
+.skywalker-section .skywalker-logo img { width: 500px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 20px; line-height: 20px; }
+.launch-time-section { padding: 150px 0; }
+.launch-time-content .is-countdown { font-size: 35px; }
+.miss-drop-block span { font-size: 20px; line-height: 25px; margin-bottom: 20px; }
+.miss-drop-block .join-follow-links { flex-direction: column; }
+.miss-drop-block .join-follow-links a { font-size: 18px; line-height: 22px; margin: 0 0 10px; }
+.miss-drop-block .join-follow-links a:last-child { margin: 0; }
+.faq-section { padding: 110px 0; }
+.faq-section .faq-content { z-index: 9; }
+.faq-section .faq-shape { width: 250px; }
+.miss-drop-block .join-follow-links a img { width: 35px; }
+.faq-block { padding: 19px 30px; margin-bottom: 40px; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; }
+.faq-block .block-title { margin-bottom: 10px; }
+.faq-block p { font-size: 18px; line-height: 22px; }
+.faq-section .civics-space { width: 135px; top: 230px; }
+.our-philosophy-section { padding-top: 50px; }
+.our-philosophy-section .our-philosophy-block { padding: 0 35px; margin-bottom: 35px; }
+.our-philosophy-block .detail p { font-size: 18px; line-height: 22px; }
+.launch-time-section .astronaut { bottom: 50px; width: 150px; }
+
+.mint-section .mint-detail { max-width: 550px; margin-top: 30px; }
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 20px; }
+.mint-connect-block .block-title span { font-size: 25px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 0; }
+.mint-section .mint-detail p { font-size: 22px; line-height: 30px; }
+.mint-connect-block .form-control { width: 125px; height: 100px; font-size: 70px; }
+.mint-connect-block .join-seo-dream-btn .btn { font-size: 22px; line-height: 30px; margin: 15px 0; }
+
+/* .footer { padding-bottom: 50px; } */
+.footer img { margin-top: -225px; }
+
+.dream-dao p {font-size: 22px; line-height: 28px;}
+.dream-dao .image-text .text p {font-size: 18px; line-height: 25px;}
+.dream-dao .heading .image img.head {max-width: 330px;}
+.dream-dao .heading .image img {max-width: 330px;}
+.dream-dao .image-text .img {height: 195px;}
+.fund-section p {font-size: 20px; line-height: 25px;}
+.fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
+.fund-section .heading .image img {max-width: 575px;}
+.fund-section .image-text .img img {width: 195px; height: 195px;}
+
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+.h-logo img {
+    width: 150px;
+}
+.navbar .navbar-toggler {
+    border: none;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: unset;
+}
+.navbar-toggler-icon {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.navbar-toggler .toggle-bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    margin: 0 0 5px;
+    position: relative;
+    transition: ease-in-out 0.2s;
+    -webkit-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    background-color: #ffffff;
+    -moz-transition: ease-in-out 0.2s;
+    -o-transition: ease-in-out 0.2s;
+}
+.navbar .navbar-nav {
+    display: block;
+}
+.navbar-toggler .navbar-toggler-icon.open .toggle-bar:first-child {
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+}
+.navbar-toggler .navbar-toggler-icon.open .toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+.navbar-toggler .navbar-toggler-icon.open .toggle-bar:last-child {
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    top: -6px;
+}
+.h-navigation ul li {
+    display: block;
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+.h-navigation ul li a {
+    text-decoration: none;
+}    
+
+.h-social-icons ul li {
+    margin: 0px 10px;
+    border: none;
+}
+.h-content .navbar-collapse {
+    margin-top: 20px;
+}
+
+.btn { font-size: 20px; line-height: 25px; }
+.btn-small { font-size: 20px; line-height: 25px; }
+.btn-big { font-size: 25px; line-height: 30px; padding: 12px 25px; }
+.section-title { font-size: 30px; line-height: 35px; margin-bottom: 30px; }
+.block-title { font-size: 25px; line-height: 30px; }
+
+.header { padding: 20px 0 10px; }
+.h-social-icons ul li img { width: 20px; }
+.h-navigation ul li { font-size: 18px; line-height: 20px;}
+
+.content { margin-top: 118px; }
+
+.banner-image img { height: 450px; object-fit: cover; font-family: 'object-fit: cover'; }
+.banner-section .space-transparan1-img { left: 10px; width: 175px; top: 10px; }
+.banner-section .space-earth-img { width: 200px; }
+.banner-section .space-transparan2-img { width: 150px; right: 10px; bottom: 35px; }
+.banner-section .space-comet-img { left: 0; bottom: 0; width: 175px; }
+.banner-title { font-size: 30px; line-height: 35px; }
+.services-section { padding: 35px 0 70px; overflow: hidden; }
+.services-section .row { margin: 0 -15px; }
+.services-section [class^=col-] { padding: 0 15px; }
+.services-section .service-block .title { font-size: 20px; line-height: 25px; }
+.services-section .service-block p { font-size: 16px; line-height: 20px; }
+.skywalker-section p { font-size: 18px; line-height: 22px; margin-bottom: 30px; }
+.skywalker-section { padding: 0 0 50px; }
+.services-section .services-image { margin-bottom: 35px; }
+.services-section .service-block { padding-left: 70px; }
+.services-section .service-block .icon { width: 55px; height: 55px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; }
+.skywalker-section .skywalker-logo img { width: 350px; }
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a { font-size: 20px; line-height: 20px; }
+.launch-time-section { padding: 100px 0; }
+.launch-time-content .is-countdown { font-size: 30px; }
+.miss-drop-block span { font-size: 18px; line-height: 22px; margin-bottom: 20px; }
+.miss-drop-block .join-follow-links { flex-direction: column; }
+.miss-drop-block .join-follow-links a { font-size: 16px; line-height: 20px; margin: 0 0 10px; }
+.miss-drop-block .join-follow-links a:last-child { margin: 0; }
+.faq-section { padding: 100px 0; }
+.miss-drop-block .join-follow-links a img { width: 25px; margin-right: 10px; }
+.faq-block { padding: 15px 20px; margin-bottom: 30px; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; }
+.faq-block .block-title { margin-bottom: 10px; }
+.faq-block p { font-size: 16px; line-height: 20px; }
+.faq-section .civics-space { width: 100px; top: 200px; display: none; }
+.faq-section .faq-shape { width: 250px; }
+.our-philosophy-section { padding-top: 50px; }
+.our-philosophy-section .our-philosophy-block { padding: 0; margin-bottom: 30px; }
+.our-philosophy-block .detail p { font-size: 16px; line-height: 20px; }
+.launch-time-section .astronaut { left: 10px; bottom: 50px; width: 125px; display: none; }
+
+.mint-connect-block { padding: 15px; border-radius: 30px; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; -o-border-radius: 30px; }
+.mint-section .mint-detail { max-width: 100%; margin-top: 30px; }
+.mint-section.mint-connect-section .mint-connect-block .block-title { margin-bottom: 20px; }
+.mint-connect-block .block-title span { font-size: 20px; }
+.mint-section.mint-connect-section .mint-connect-block .btn { margin-bottom: 0; }
+.mint-section .mint-detail p { font-size: 16px; line-height: 22px; }
+.mint-connect-block .form-control { width: 125px; height: 100px; font-size: 70px; }
+.mint-connect-block .join-seo-dream-btn { margin-bottom: 15px; }
+.mint-connect-block .join-seo-dream-btn .btn:nth-child(odd),
+.mint-connect-block .join-seo-dream-btn .btn:nth-child(even) { float: none; }
+.mint-connect-block .join-seo-dream-btn .btn { font-size: 16px; line-height: 22px; margin: 10px 0; }
+
+/* .footer { padding-bottom: 30px; } */
+.footer img { margin-top: -225px; }
+
+.dream-dao p {font-size: 18px; line-height: 25px;}
+.dream-dao .image-text .text p {font-size: 18px; line-height: 25px;}
+.dream-dao .heading .image img.head {max-width: 250px;}
+.dream-dao .heading .image img {max-width: 250px;}
+.dream-dao .image-text .img {height: auto;}
+.fund-section p {font-size: 18px; line-height: 25px;}
+.fund-section .image-text .text span {font-size: 18px; line-height: 25px;}
+.fund-section .heading .image img {max-width: 100%;}
+.fund-section .image-text .img img {width: auto; height: auto;}
+
+}
+
+/*---------- Small Mobile , IPhone Start ----------*/
+
+/*=== Screen Size = 240, 320, 360, 480, 568 ===*/
+@media (min-width: 576px) and (max-width: 767px){
+}
+
+@media (min-width: 240px) and (max-width: 575px){
+
+.section-title { font-size: 25px; line-height: 30px; }
+.block-title { font-size: 22px; line-height: 28px; }
+
+.h-logo img { width: 100px; }
+
+.header { text-align: center; padding: 20px 0; }
+/* .h-social-icons ul { justify-content: center; } */
+.h-right { justify-content: center; margin-top: 20px; }
+/* .h-navigation ul { justify-content: center; } */
+
+.content { margin-top: 98px; }
+
+.banner-section .space-comet-img { width: 150px; }
+.launch-time-content .is-countdown { font-size: 25px; }
+.launch-time-section { padding: 70px 0; }
+.our-philosophy-section { padding-bottom: 175px; }
+
+.dream-dao p {font-size: 18px; line-height: 25px;}
+.dream-dao .image-text .text p {font-size: 18px; line-height: 25px;}
+.dream-dao .heading .image img.head {max-width: 100%;}
+.dream-dao .heading .image img {max-width: 100%;}
+.dream-dao .image-text .img {height: auto;}
+.fund-section p {font-size: 18px; line-height: 25px;}
+.fund-section .image-text .text span {font-size: 18px; line-height: 25px;}
+.fund-section .heading .image img {max-width: 100%;}
+.fund-section .image-text .img img {width: 290px; height: 290px;}
+.fund-section .image-text {margin-bottom: 40px;}
+
+}
+/*---------- Large Desktop , Large Screen End ----------*/

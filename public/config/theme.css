@@ -1,7 +1,8 @@
 :root {
-  --primary: #ebc908;
+  --primary: #071A2F;
   --primary-text: #1a1a1a;
-  --secondary: #ff1dec;
+  --button-color: white;
+  --secondary: #FEA176;
   --secondary-text: #ffffff;
   --accent: #505050;
   --accent-text: #ffffff;

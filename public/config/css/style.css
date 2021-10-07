@@ -1,0 +1,959 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------- Google Fonts ----------*/
+
+body{
+	font-family: 'MontserratRegular', sans-serif;
+	background-color: #F6F6F6;
+	/* scroll-behavior: smooth; */
+}
+
+a,
+input,
+button,
+textarea { outline: none !important; }
+
+a {
+	transition: all ease-in-out 300ms;
+	-webkit-transition: all ease-in-out 300ms;
+	-ms-transition: all ease-in-out 300ms;
+	-o-transition: all ease-in-out 300ms;
+	-moz-transition: all ease-in-out 300ms;
+}
+
+.pad-left {
+	padding-left:0;
+}
+
+.pad-right {
+	padding-right:0;
+}
+
+.pad-top {
+	padding-top:0;
+}
+
+.pad-bottom {
+	padding-bottom:0;
+}
+
+.padding {
+	padding:0;
+}
+
+.txtBlue {
+	color: #071A2F !important;
+}
+
+.txtWhite {
+	color: #FFFFFF !important;
+}
+
+.blueBg {
+	background-color: #071A2F !important;
+}
+
+/*========== Section Shape Start ==========*/
+.section-shape {
+	position: relative;
+}
+
+.section-shape .shape {
+	position: absolute;
+	z-index: 9;
+}
+
+.section-shape .half-circle-shape {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	width: 100%;
+}
+
+.section-shape .square-shape {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+/*========== Section Shape End ==========*/
+
+/*========== Title Border Start ==========*/
+.title-border h1,
+.title-border h2,
+.title-border h3,
+.title-border h4,
+.title-border h5,
+.title-border h6 {
+	position: relative;
+	padding: 0 0 15px;
+}
+
+.title-border h1:before,
+.title-border h2:before,
+.title-border h3:before,
+.title-border h4:before,
+.title-border h5:before,
+.title-border h6:before {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	height: 5px;
+	width: 6000px;
+}
+
+.title-blue-border h1:before,
+.title-blue-border h2:before,
+.title-blue-border h3:before,
+.title-blue-border h4:before,
+.title-blue-border h5:before,
+.title-blue-border h6:before {
+	background-color: #071A2F;
+}
+
+.title-white-border h1:before,
+.title-white-border h2:before,
+.title-white-border h3:before,
+.title-white-border h4:before,
+.title-white-border h5:before,
+.title-white-border h6:before {
+	background-color: #FFFFFF;
+}
+/*========== Title Border End ==========*/
+
+/*========== Section Title Start ==========*/
+.section-title {
+	font-family: 'MontserratBold';
+	font-size: 100px;
+	line-height: 122px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 67px;
+	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-title h1,
+.section-title h2,
+.section-title h3,
+.section-title h4,
+.section-title h5,
+.section-title h6 {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-shadow: inherit;
+	margin: 0;
+}
+/*========== Section Title End ==========*/
+
+/*========== Block Title Start ==========*/
+.block-title {
+	font-family: 'MontserratBold';
+	font-size: 50px;
+	line-height: 61px;
+	color: #071A2F;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.block-title h1,
+.block-title h2,
+.block-title h3,
+.block-title h4,
+.block-title h5,
+.block-title h6 {
+	position: relative;
+	display: inline-block;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-shadow: inherit;
+	margin: 0;
+}
+/*========== Block Title End ==========*/
+
+/*========== Buttons Start ==========*/
+.btn {
+	font-family: 'MontserratBold';
+	font-size: 55px;
+	line-height: 67px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	padding: 5px 25px;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: none !important;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+
+.btn-small {
+	font-size: 50px;
+	line-height: 61px;
+}
+
+.btn-big {
+	font-size: 60px;
+	line-height: 73px;
+	padding: 12px 55px;
+}
+
+.btn-blue {
+	color: #FFFFFF;
+	background-color: #071A2F;
+}
+
+.btn-blue:focus {
+	color: #FFFFFF;
+	background-color: #071A2F;
+}
+
+.btn-blue:hover,
+.btn-blue:active:focus {
+	color: #FFFFFF;
+	background-color: rgba(7,26,47,0.8);
+}
+
+.btn-orange {
+	color: #FFFFFF;
+	background-color: #FEA176;
+}
+
+.btn-orange:focus {
+	color: #FFFFFF;
+	background-color: #FEA176;
+}
+
+.btn-orange:hover,
+.btn-orange:active:focus {
+	color: #FFFFFF;
+	background-color: rgba(254,161,118,0.8);
+}
+/*========== Buttons End ==========*/
+
+/*==================================================================*/
+/*========== Header Start ==========*/
+/*==================================================================*/
+.header {
+	padding: 24px 46px 10px;
+	background-color: #002043;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.h-logo {
+	text-align: center;
+	max-width: 30vw;
+}
+
+.h-content .navbar {
+	padding: 0;
+}
+.h-content .navbar-collapse {
+    flex-grow: unset;
+} 
+.h-content .navbar-expand-md {
+    justify-content: space-between;
+}
+
+.h-logo img {
+	position: relative;
+	display: inline-block;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.header.header-stick .h-logo img {
+	width: 125px;
+}
+
+.h-right {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.h-navigation ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex-flow: row wrap;
+}
+
+.h-navigation ul li {
+	display: inline-flex;
+	margin: 0 5px;
+	padding: 0;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-family: 'MontserratRegular';
+	font-size: 25px;
+	line-height: 30px;
+	color: #FFFFFF;
+	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.h-navigation ul li:first-child {
+	margin-left: 0;
+}
+
+.h-navigation ul li:last-child {
+	margin-right: 0;
+}
+
+.h-navigation ul li a {
+	text-decoration: underline;
+	color: rgba(255,255,255,0.5);
+	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.h-navigation ul li a:hover,
+.h-navigation ul li a.active,
+.h-navigation ul li a.current-menu-item {
+	color: #FFFFFF;
+}
+
+.h-navigation ul li.active a,
+.h-navigation ul li.current-menu-item a {
+	color: #FFFFFF;
+}
+
+
+.h-social-icons ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.h-social-icons ul li {
+	display: inline-flex;
+	margin: 0 5px;
+	padding: 0;
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.h-social-icons ul li:first-child {
+	margin-left: 0;
+}
+
+.h-social-icons ul li:last-child {
+	margin-right: 0;
+}
+
+.h-social-icons ul li img {
+	width: 33px;
+}
+
+.h-social-icons ul li a:hover {
+	opacity: 0.7;
+}
+/*==================================================================*/
+/*========== Header End ==========*/
+/*==================================================================*/
+
+
+
+/*==================================================================*/
+/*========== New Class Add Start ==========*/
+/*==================================================================*/
+.content {
+	margin-top: 152px;
+}
+
+/* Banner Start */
+.banner-section {
+	position: relative;
+}
+
+.banner-section .space-earth-img {
+	right: 0;
+	top: 0;
+	width: 350px;
+}
+
+.banner-section .space-transparan1-img {
+	left: 45px;
+	top: 50px;
+}
+
+.banner-section .space-transparan2-img {
+	right: 177px;
+	bottom: 182px;
+}
+
+.banner-section .space-comet-img {
+	left: 225px;
+	bottom: 100px;
+}
+
+.banner-image {
+	position: relative;
+}
+
+.banner-image img {
+	width: 100%;
+}
+
+.banner-title {
+	font-family: 'MontserratBold';
+	font-size: 90px;
+	line-height: 90px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 25px;
+}
+
+.banner-title h1,
+.banner-title h2,
+.banner-title h3,
+.banner-title h4,
+.banner-title h5,
+.banner-title h6 {
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+}
+
+.banner-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	text-align: center;
+	z-index: 9;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+}
+/* Banner End */
+
+/* Services Start */
+.services-section {
+	padding: 79px 45px 189px;
+}
+
+.services-section .row {
+	margin: 0 -50px;
+}
+
+.services-section [class^=col-] {
+	padding: 0 50px;
+}
+
+.services-section .services-image img {
+	width: 100%;
+}
+
+.services-section .service-block {
+	position: relative;
+	padding-left: 88px;
+	margin-bottom: 25px;
+}
+
+.services-section .service-block .icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 66px;
+	height: 75px;
+	padding: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #071A2F;
+	border-radius: 26px;
+	-webkit-border-radius: 26px;
+	-moz-border-radius: 26px;
+	-ms-border-radius: 26px;
+	-o-border-radius: 26px;
+}
+
+.services-section .service-block .icon img {
+	max-height: 100%;
+}
+
+.services-section .service-block .title {
+	font-family: 'MontserratBold';
+	font-size: 35px;
+	line-height: 41px;
+	color: #071A2F;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.services-section .service-block .title h1,
+.services-section .service-block .title h2,
+.services-section .service-block .title h3,
+.services-section .service-block .title h4,
+.services-section .service-block .title h5,
+.services-section .service-block .title h6 {
+	font-family: inherit;
+	font-size: 	inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: 0;
+}
+
+.services-section .service-block p {
+	font-size: 30px;
+	line-height: 37px;
+	color: #071A2F;
+	margin: 0;
+}
+
+.learn-more-button {
+	display: flex;
+	justify-content: flex-end;
+}
+/* Services End */
+
+/* Skywalker Start */
+.skywalker-section {
+	padding: 0 36px 75px;
+	text-align: center;
+}
+
+.skywalker-section .remaining-skywalker {
+	padding-bottom: 25px;
+}
+
+.skywalker-section .remaining-skywalker span,
+.skywalker-section .remaining-skywalker a {
+	font-family: 'MontserratBoldItalic';
+	font-size: 30px;
+	line-height: 37px;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+.skywalker-section .skywalker-detail {
+	padding-top: 45px;
+}
+
+.skywalker-section p {
+	font-size: 40px;
+	line-height: 49px;
+	color: #FFFFFF;
+	margin-bottom: 44px;
+}
+
+.skywalker-section .remaining-skywalker a:hover {
+	color: rgba(255,255,255,0.5);
+}
+
+.skywalker-carousel {
+	opacity: 0;
+}
+
+.skywalker-carousel.slick-initialized {
+	opacity: 1;
+}
+
+.skywalker-carousel .skywalker-item {
+	margin: 0 15px;
+}
+
+.skywalker-carousel .skywalker-item img {
+	width: 100%;
+}
+/* Skywalker End */
+
+/* Launch Time Start */
+.launch-time-section {
+	padding: 271px 0 303px;
+	text-align: center;
+	position: relative;
+}
+
+.launch-time-section .astronaut {
+	left: 20px;
+	bottom: 95px;
+	z-index: 0;
+}
+
+.launch-time-section .shape-top {
+	top: 0;
+}
+
+.launch-time-section .shape-bottom {
+	bottom: -2px;
+}
+
+.launch-time-content .is-countdown {
+	border: none;
+	background-color: transparent;
+	font-family: 'RobotoBold';
+	font-size: 144px;
+	line-height: 0.8;
+	color: #FEA176;
+}
+
+.launch-time-section .miss-drop-block {
+	padding-top: 30px;
+}
+
+.miss-drop-block span {
+	display: block;
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 57px;
+}
+
+.miss-drop-block .join-follow-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.miss-drop-block .join-follow-links a {
+	text-decoration: none;
+	display: inline-flex;
+	margin: 0 82px;
+	font-family: 'MontserratBold';
+	font-size: 30px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	align-items: center;
+}
+
+.miss-drop-block .join-follow-links a img {
+	width: 64px;
+	margin-right: 20px;
+}
+
+.miss-drop-block .join-follow-links a:first-child {
+	margin-left: 0;
+}
+
+.miss-drop-block .join-follow-links a:last-child {
+	margin-right: 0;
+}
+
+.miss-drop-block .join-follow-links a:hover {
+	color: rgba(255,255,255,0.5);
+}
+/* Launch Time End */
+
+/* Faq Start */
+.faq-section {
+	padding: 250px 0 139px;
+	position: relative;
+}
+
+.faq-section .faq-shape {
+	position: absolute;
+	left: -85px;
+	bottom: 0;
+	width: 350px;
+}
+
+.faq-section .civics-space {
+	right: 20px;
+	top: 287px;
+}
+
+.faq-section .faq-content {
+	margin-top: 40px;
+	position: relative;
+}
+
+.faq-block {
+	border: 4px solid #FFFFFF;
+	padding: 19px 43px;
+	margin-bottom: 58px;
+	border-radius: 58px;
+	-webkit-border-radius: 58px;
+	-moz-border-radius: 58px;
+	-ms-border-radius: 58px;
+	-o-border-radius: 58px;
+}
+
+.faq-block p {
+	font-size: 35px;
+	line-height: 43px;
+	color: #FFFFFF;
+	margin: 0;
+}
+/* Faq End */
+
+/* Our Philosophy Start */
+.our-philosophy-section {
+	padding: 98px 0 213px;
+	overflow: hidden;
+}
+
+.our-philosophy-block {
+	padding: 0 82px;
+}
+
+.our-philosophy-block .detail p {
+	font-size: 30px;
+	line-height: 37px;
+	color: #071A2F;
+	margin-bottom: 20px;
+}
+
+.our-philosophy-block .detail p b {
+	font-family: 'MontserratBold';
+}
+
+.our-philosophy-section .our-philosophy-block {
+	margin-bottom: 85px;
+}
+
+.our-philosophy-section .our-philosophy-block:nth-child(even) {
+	text-align: right;
+}
+
+.our-philosophy-section .our-philosophy-block:nth-child(even) .row {
+	flex-direction: row-reverse;
+}
+
+.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h1:before,
+.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h2:before,
+.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h3:before,
+.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h4:before,
+.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h5:before,
+.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h6:before {
+	right: auto;
+	left: 0;
+}
+/* Our Philosophy End */
+
+/* Mint Section */
+.mint-section {
+	position: relative;
+	text-align: center;
+}
+
+.mint-section .shape-top {
+	top: 0;
+}
+
+.mint-section .shape-bottom {
+	bottom: 0;
+}
+
+.mint-section .section-title {
+	position: relative;
+	z-index: 9;
+	margin-bottom: 20px;
+}
+
+.mint-section.mint-connect-section .mint-image img {
+	margin-top: -100px;
+}
+
+.mint-section .mint-image .block-title {
+	font-family: 'MontserratBoldItalic';
+	text-shadow: none;
+	margin: 0;
+}
+
+.mint-section.mint-connect-section .mint-connect-block .btn {
+	margin-bottom: 30px;
+}
+
+.mint-section.mint-connect-section .mint-connect-block .block-title {
+	margin-bottom: 62px;
+}
+
+.mint-section .mint-detail {
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mint-section .mint-detail p {
+	font-family: 'MontserratRegular';
+	font-size: 40px;
+	line-height: 49px;
+	margin: 30px 0 0;
+	clear: both;
+}
+
+.mint-connect-block {
+	background-color: #FEA176;
+	padding: 15px 40px;
+	border-radius: 60px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+}
+
+.mint-connect-block .block-title {
+	text-transform: unset;
+	margin-bottom: 20px;
+}
+
+.mint-connect-block .block-title span {
+	font-family: 'MontserratRegular';
+	display: block;
+	font-size: 40px;
+}
+
+.mint-connect-block .form-control {
+	width: 222px;
+	height: 200px;
+	border: none;
+	box-shadow: none !important;
+	background-color: #fff;
+	font-family: 'OswaldRegular';
+	font-size: 150px;
+	line-height: 1;
+	color: #071A2F;
+	text-align: center;
+	margin: 0 auto 20px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+}
+
+.mint-connect-block .join-seo-dream-btn {
+	float: left;
+	width: 100%;
+}
+
+.mint-connect-block .join-seo-dream-btn .btn {
+	font-size: 40px;
+	line-height: 49px;
+	margin: 20px 0;
+}
+
+.mint-connect-block .join-seo-dream-btn .btn:nth-child(odd) {
+	float: left;
+}
+
+.mint-connect-block .join-seo-dream-btn .btn:nth-child(even) {
+	float: right;
+}
+/* Mint Section */
+/*==================================================================*/
+/*========== New Class Add End ==========*/
+/*==================================================================*/
+
+
+
+/*==================================================================*/
+/*========== Footer Start ==========*/
+/*==================================================================*/
+.footer {
+	text-align: center;
+	/* padding-bottom: 73px; */
+	position: relative;
+	z-index: 9;
+}
+
+.footer img {
+	margin-top: -275px;
+}
+/*==================================================================*/
+/*========== Footer End ==========*/
+/*==================================================================*/
+
+/* dream-dao */
+
+.dream-dao .heading .image img.head {
+	max-width: 870px;
+}
+
+.dream-dao p {
+    font-size: 40px;
+    line-height: 48px;
+	text-align: center;
+}
+
+.dream-dao .image-text .text p {
+	font-weight: 700;
+	margin-bottom: 0;
+	font-size: 35px;
+	line-height: 40px;
+	color:#071A2F;
+}
+
+.dream-dao .image-text .img {
+	height: 375px;
+}
+
+/* who we fund */
+
+.faq-section.section-shape .square-shape {
+    top: 0;
+}
+
+.fund-section .heading .image img {
+	max-width: 1165px;
+}
+
+.fund-section p {
+    font-size: 40px;
+    line-height: 49px;
+    color: #071A2F;
+	text-align: center;
+    margin-bottom: 44px;
+}
+
+.fund-section .image-text .img img {
+	width: 350px;
+	height: 345px;
+	object-fit: cover;
+	font-family: "object-fit: cover";
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.fund-section .image-text .text p {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.fund-section .image-text .text {
+	margin-top: 20px;
+}
+
+.fund-section .image-text .text span {
+	font-size: 30px;
+	line-height: 36px;
+	color: #000000;
+}
+

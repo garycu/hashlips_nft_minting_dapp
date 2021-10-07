@@ -1,42 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <base href="/" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="%PUBLIC_URL%/config/theme.css" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>CIVICS</title>
+<meta name="description" content="" />
+<meta name="title" content="" />
+<meta name="keywords" content="" />
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/config/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/config/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/config/images/favicon-16x16.png">
+<link rel="manifest" href="%PUBLIC_URL%/config/images/site.webmanifest">
+<link rel="mask-icon" href="%PUBLIC_URL%/config/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- Bootstrap -->
+<link href="%PUBLIC_URL%/config/css/bootstrap.css" rel="stylesheet">
+<!-- Theme -->
+<link href="%PUBLIC_URL%/config/theme.css" rel="stylesheet">
+<!--=== Add By Designer ===-->
+<link href="%PUBLIC_URL%/config/css/style.css" rel="stylesheet">
+<link href="%PUBLIC_URL%/config/fonts/fonts.css" rel="stylesheet">
+<link href="%PUBLIC_URL%/config/css/responsive.css" rel="stylesheet">
+<!-- counter -->
+<link href="%PUBLIC_URL%/config/css/jquery.countdown.css" rel="stylesheet">
+<!-- slick -->
+<link href="%PUBLIC_URL%/config/css/slick.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="%PUBLIC_URL%/config/css/font-awesome.min.css" rel="stylesheet">
+<!--=== Windows Phone JS Code Start ===-->
+<script type="text/javascript">
+	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		var msViewportStyle = document.createElement('style')
+		msViewportStyle.appendChild(
+			document.createTextNode(
+				'@-ms-viewport{width:auto!important}'
+				)
+			)
+		document.querySelector('head').appendChild(msViewportStyle)
+	}
+</script>
+<!--=== Windows Phone JS Code End ===-->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- header start -->
+<header class="header">
+	<div class="container-fluid">
+		<div class="h-content">
+			<nav class="navbar navbar-expand-md">
+				<div class="h-left h-social-icons d-none d-md-block">
+					<ul>
+						<li><a href="http://instagram.com/CivicsUnplugged" target="_blank"><img
+									src="%PUBLIC_URL%/config/images/instagram.svg" alt="instagram" class="img-fluid"></a></li>
+						<li><a href="http://facebook.com/CivicsUnplugged" target="_blank"><img
+									src="%PUBLIC_URL%/config/images/facebook.svg" alt="facebook" class="img-fluid"></a></li>
+						<li><a href="http://twitter.com/CivicsUnplugged" target="_blank"><img
+									src="%PUBLIC_URL%/config/images/twitter.svg" alt="twitter" class="img-fluid"></a></li>
+						<li><a href="http://civicsunplugged.org/" target="_blank"><img src="%PUBLIC_URL%/config/images/website.svg"
+									alt="website" class="img-fluid"></a></li>
+					</ul>
+				</div>
+				<div class="h-middle h-logo">
+					<a href="index.html">
+						<img src="%PUBLIC_URL%/config/images/logo.png" alt="logo" class="img-fluid">
+					</a>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<span class="toggle-bar"></span>
+						<span class="toggle-bar"></span>
+						<span class="toggle-bar"></span>
+					</span>
+				</button>
+				<div class="h-navigation collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav align-items-center">
+						<li class="active"><a href="index.html">HOME</a></li>
+						<li><a href="javascript:void(0);" data-scroll-nav="0">BUY</a></li>
+						<li><a href="javascript:void(0);" data-scroll-nav="1">DAO</a></li>
+						<li><a href="javascript:void(0);" data-scroll-nav="2">FAQ</a></li>
+					</ul>
+					<div class="h-left h-social-icons d-md-none">
+						<ul>
+							<li><a href="http://instagram.com/CivicsUnplugged" target="_blank"><img
+										src="%PUBLIC_URL%/config/images/instagram.svg" alt="instagram" class="img-fluid"></a></li>
+							<li><a href="http://facebook.com/CivicsUnplugged" target="_blank"><img
+										src="%PUBLIC_URL%/config/images/facebook.svg" alt="facebook" class="img-fluid"></a></li>
+							<li><a href="http://twitter.com/CivicsUnplugged" target="_blank"><img
+										src="%PUBLIC_URL%/config/images/twitter.svg" alt="twitter" class="img-fluid"></a></li>
+							<li><a href="http://civicsunplugged.org/" target="_blank"><img
+                    src="%PUBLIC_URL%/config/images/website.svg" alt="website" class="img-fluid"></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</header>
+<!-- header end -->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Nerdy Coder Clones</title>
-    <meta name="description" content="Mint your Nerdy Coder Clone NFT" />
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<!-- content start -->
+<div class="content">
+	<!-- Banner -->
+	<div class="banner-section section-shape">
+		<img src="%PUBLIC_URL%/config/images/space-earth.png" alt="space-earch" class="img-fluid shape space-earth-img">
+		<img src="%PUBLIC_URL%/config/images/space-transparan1.png" alt="space-transparan" class="img-fluid shape space-transparan1-img">
+		<img src="%PUBLIC_URL%/config/images/space-transparan2.png" alt="space-transparan" class="img-fluid shape space-transparan2-img">
+		<img src="%PUBLIC_URL%/config/images/space-comet.png" alt="space-comet" class="img-fluid shape space-comet-img">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+		<div class="banner-image">
+			<img src="%PUBLIC_URL%/config/images/banner.jpg" alt="banner" class="img-fluid">
+		</div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+		<div class="banner-content">
+			<div class="container">
+				<div class="banner-title">
+					<h1>REVOLUTIONIZE PHILANTHROPY</h1>
+				</div>  
+				<a class="btn btn-big btn-orange" href="javascript:void(0);" role="button" data-scroll-nav="0">MINT NOW</a>
+			</div>
+		</div>
+
+		<img src="%PUBLIC_URL%/config/images/grey-shape.svg" alt="grey-shape" class="img-fluid half-circle-shape">
+	</div>
+	<!-- Banner -->
+
+	<!-- Services -->
+	<div class="services-section section-shape">
+		<div class="container-fluid">
+			<div class="row flex-row-reverse">
+				<div class="col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+					<div class="services-image">
+						<img src="%PUBLIC_URL%/config/images/services.png" alt="services" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-7 col-xl-7 col-xxl-7">
+					<div class="services-content">
+						<div class="services-list">
+							<div class="service-block">
+								<div class="icon">
+									<img src="%PUBLIC_URL%/config/images/service1.svg" alt="service" class="img-fluid">
+								</div>
+								<div class="title">
+									<h3>THE ORIGIN</h3>
+								</div>
+								<div class="detail">
+									<p>SkywalkerZ were created by the global and intergenerational community at Civics Unplugged, a 501c3 organization dedicated to empowering Generation Z to build the future of Humanity.</p>
+								</div>
+							</div>
+							<div class="service-block">
+								<div class="icon">
+									<img src="%PUBLIC_URL%/config/images/service2.svg" alt="service" class="img-fluid">
+								</div>
+								<div class="title">
+									<h3>THE PURPOSE</h3>
+								</div>
+								<div class="detail">
+									<p>Traditional philanthropic systems do not align with the pace of change needed to build the future. We are raising a massive fund dedicated to investing directly in young changemakers who are leveraging blockchain technology to build a brighter future.</p>
+								</div>
+							</div>
+							<div class="service-block">
+								<div class="icon">
+									<img src="%PUBLIC_URL%/config/images/service3.svg" alt="service" class="img-fluid">
+								</div>
+								<div class="title">
+									<h3>THE FUTURE</h3>
+								</div>
+								<div class="detail">
+									<p>NFT holders earn membership into the Dream DAO, where members collectively decide on who they want to financially support through the DAO.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="learn-more-button">
+							<a class="btn btn-small btn-blue" href="javascript:void(0);" role="button">LEARN MORE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="%PUBLIC_URL%/config/images/blue-shape.svg" alt="grey-shape" class="img-fluid half-circle-shape">
+	</div>
+	<!-- Services -->
+
+	<!-- Launch Time -->
+	<!-- div class="launch-time-section blueBg section-shape">
+		<img src="%PUBLIC_URL%/config/images/square-top-shape.png" alt="square-top-shape" class="img-fluid square-shape shape-top">
+
+		<div class="container">
+			<div class="section-title txtWhite">
+				<h2>// TIME TO LAUNCH //</h2>
+			</div>
+			<div class="launch-time-content">
+				<div class="custom_timer"></div>
+				<div class="miss-drop-block">
+					<span>DON’T MISS A DROP</span>
+					<div class="join-follow-links">
+						<a href="javascript:void(0);">JOIN OUR DISCORD</a>
+						<a href="https://twitter.com/civicsunplugged"><img src="%PUBLIC_URL%/config/images/twitter.svg" alt="twitter" class="img-fluid"> FOLLOW US ON TWITTER</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="%PUBLIC_URL%/config/images/astronaut.png" alt="astronaut" class="img-fluid astronaut shape">
+		<img src="%PUBLIC_URL%/config/images/square-bottom-shape.png" alt="square-bottom-shape" class="img-fluid square-shape shape-bottom">
+	</div> -->
+	<!-- Launch Time -->
+
+
+	<!-- Mint Section -->
+	<div class="mint-section section-shape" data-scroll-index="0">
+		<div id="root"></div>
+	</div>
+	<!-- Mint Section -->
+
+  <!-- dream dao Section -->
+	<div class="dream-dao" data-scroll-index="1">
+		<div class="container">
+			<div class="heading">
+				<div class="image text-center">
+					<img src="%PUBLIC_URL%/config/images/title-1(2x).png" alt="title-1(2x)" class="img-fluid head">
+					<img src="%PUBLIC_URL%/config/images/title-shape.png" alt="" class="img-fluid">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-12 col-lg-10 col-xl-10 col-xxl-12">
+						<p>The philanthropic fund raised from NFT purchases will be managed by the Dream DAO, which SkywalkerZ NFT holders collectively govern. Members of the Dream DAO will be able to vote on whether or not to fund a select group of project proposals from young people. </p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+						<div class="image-text text-center">
+							<div class="img">
+								<img src="%PUBLIC_URL%/config/images/dream-img.png" alt="" class="img-fluid">
+							</div>
+							<div class="text">
+								<p>For every SkywalkerZ NFT purchased, one SkywalkerZ NFT is given to an active member of CU’s existing Gen Z community to maintain a balance of decision making power between members. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+						<div class="image-text text-center">
+							<div class="img">
+								<img src="%PUBLIC_URL%/config/images/dream-img-2.png" alt="" class="img-fluid">
+							</div>
+							<div class="text">
+								<p>Civics Unplugged's existing community of thousands of young leaders around the world and extensive partner network will help curate potential grantees.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+						<div class="image-text text-center">
+							<div class="img">
+								<img src="%PUBLIC_URL%/config/images/dream-img-3.png" alt="" class="img-fluid">
+							</div>
+							<div class="text">
+								<p>Joining the Dream DAO is not required when purchasing a SkywalkerZ NFT. Users can choose to support the fund by donating cryptocurrency, fiat, or minting multiple SkywalkerZ.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- dream dao Section end -->
+
+  <!-- who we fund Section -->
+	<div class="fund-section section-shape">
+		<div class="container">
+			<div class="heading">
+				<div class="image text-center">
+					<img src="%PUBLIC_URL%/config/images/title-2(2x).png" alt="title-2(2x)" class="img-fluid">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+					<p>Below are a few examples of young leaders we’ve already invested in through the Civics Unplugged community. The Dream DAO will help us grow our investments, and further democratize philanthropic systems.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="image-text text-center">
+						<div class="img">
+							<img src="%PUBLIC_URL%/config/images/fund-img-1.png" alt="" class="img-fluid">
+						</div>
+						<div class="text">
+							<p>Zoe Jenkins, 18</p>
+							<span>Kentucky, U.S.A</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="image-text text-center">
+						<div class="img">
+							<img src="%PUBLIC_URL%/config/images/fund-img-2.png" alt="" class="img-fluid">
+						</div>
+						<div class="text">
+							<p>Zoe Jenkins, 18</p>
+							<span>, India</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="image-text text-center">
+						<div class="img">
+							<img src="%PUBLIC_URL%/config/images/fund-img-3.png" alt="" class="img-fluid">
+						</div>
+						<div class="text">
+							<p>Zoe Jenkins, 18</p>
+							<span>Sao Paulo, Brazil</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="image-text text-center">
+						<div class="img">
+							<img src="%PUBLIC_URL%/config/images/fund-img-4.png" alt="" class="img-fluid">
+						</div>
+						<div class="text">
+							<p>Zoe Jenkins, 18</p>
+							<span>New York, U.S.A</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="image-text text-center">
+						<div class="img">
+							<img src="%PUBLIC_URL%/config/images/fund-img-2.png" alt="" class="img-fluid">
+						</div>
+						<div class="text">
+							<p>Zoe Jenkins, 18</p>
+							<span>Sao Paulo, Brazil</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- who we fund Section end -->
+
+	<!-- Faq -->
+	<div class="faq-section blueBg section-shape" data-scroll-index="2">
+		<img src="%PUBLIC_URL%/config/images/shape-top-faq.png" alt="square-top-shape" class="img-fluid square-shape shape-top">
+		<img src="%PUBLIC_URL%/config/images/civics-space.png" alt="civics-space" class="img-fluid shape civics-space">
+
+		<div class="container">
+			<div class="faq-content">
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>WHAT IS AN NFT?</h3>
+					</div>
+					<p>Non-fungible token (NFT) is a term used to describe a unique digital asset whose ownership is tracked on a blockchain, such as Ethereum.  This beginner's guide to NFTs provides a good intro to the world of NFTs.</p>
+				</div>
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>HOW MANY NFTS CAN I MINT?</h3>
+					</div>
+					<p>You can mint as many as you want. The more tokens you own, the more power you have to shape DAO decision making.</p>
+				</div>
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>HOW DO THE NFTS WORK?</h3>
+					</div>
+					<p>Each NFT is unique, with different NFTs having different attributes (e.g. background, helmet, hat, chest plate) of different rarities. It is easy to resell these NFTs on any NFT markeplace like OpenSea.</p>
+				</div>
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>WHAT IS A DAO?</h3>
+					</div>
+					<p>DAOs are internet communities with a shared cap table and bank account. This beginner's guide to DAOs provides a good intro to the world of DAOs.</p>
+				</div>
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>WAIT, SO HOW DO I JOIN THE DREAM DAO?</h3>
+					</div>
+					<p>After you purchase a Skywalker, visit this form to confirm your intent to participate in DAO activities! DAO members will be able to direct where the funds raised from the SkywalkerZ project are alocated, and have access to exclusive events, airdops, and more.</p>
+				</div>
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>WHAT IS CIVICS UNPLUGGED?</h3>
+					</div>
+					<p>Civics Unplugged is a nonpartisan social enterprise whose mission is to empower the leaders of Generation Z to build a brighter future for humanity. We are led by a community of thousands of Gen Zers from all 50 U.S. states, and 47 countries around the globe — all dedicated to making the world a better place.</p>
+				</div>
+				<div class="faq-block">
+					<div class="block-title txtWhite">
+						<h3>DID SOMEONE SAY CARBON?</h3>
+					</div>
+					<p>We are offsetting the carbon emmissions of the SkywalkerZ NFT Project, and of Civics Unplugged as a whole.</p>
+				</div>
+			</div>
+		</div>
+
+		<img src="%PUBLIC_URL%/config/images/grey-shape.svg" alt="grey-shape" class="img-fluid half-circle-shape">
+		<img src="%PUBLIC_URL%/config/images/faq-shape.png" alt="faq-shape" class="img-fluid faq-shape">
+	</div>
+	<!-- Faq -->
+
+	<!-- Our Philosophy -->
+	<div class="our-philosophy-section section-shape">
+		<div class="container-fluid">
+			<div class="section-title" style="color:black">
+				<h2>// OUR PHILOSOPHY //</h2>
+			</div>
+
+			<div class="our-philosophy-content">
+				<div class="our-philosophy-block">
+					<div class="row">
+						<div class="col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+							<div class="block-title title-border title-blue-border">
+								<h2>WHY WE EXIST</h2>
+							</div>
+							<div class="detail">
+								<p>If the past few years have shown us anything, it's that the breakdown of societal systems in one place impedes the potential for humans to flourish everywhere. To reverse our downward spiral, we must invest in young leaders who are eager to collaborate to support the flourishing of their communities and the world around them.</p>
+
+								<p>While many different interventions are needed to reverse the downward spiral, we at Civics Unplugged are confident that investing directly into youth around the world is essential to how we as a global community can radically increase the health and resilience of our collective future.</p>
+
+								<p>These youth have the creativity, energy, and passion to build a brighter future. In today's age, they can leverage collective intelligence, access resources, and make waves using just a mobile phone.</p>
+
+								<p>They only have one major roadblock — funding.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="our-philosophy-block">
+					<div class="row">
+						<div class="col-md-12 col-lg-10 col-xl-10 col-xxl-10">
+							<div class="block-title title-border title-blue-border">
+								<h2>A NEW WAY TO INVEST IN THE FUTURE</h2>
+							</div>
+							<div class="detail">
+								<p>Since we've launched Civics Unplugged, we've seen foundations struggle with long timelines, unclear funding priorities, centralized decision making structures, and niche KPIs. Their funding methods were not aligned with our new approach to human development at Civics Unplugged.</p>
+
+								<p>That's why we decided to pool our own capital and invest directly in youth led projects within Civics Unplugged. Over the past year, we've moved over $100,000 directly to Gen Z and impacted over hundreds of thousands of people. This strategy has put us on the path to be the largest youth-empowerment movement on the planet.</p>
+
+								<p><b>What we are building will allow a new community of funders to invest directly in young people using decentralized technology for good. It is a new, liberating philanthropic system that mirrors the values and principles of the space it is fueled by.</b></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="%PUBLIC_URL%/config/images/blue-shape.svg" alt="blue-shape" class="img-fluid half-circle-shape">
+	</div>
+	<!-- Our Philosophy -->
+</div>
+<!-- content end -->
+
+<!-- footer start -->
+<footer class="footer blueBg">
+	<div class="container">
+		<img src="%PUBLIC_URL%/config/images/footer-img.png" alt="footer-img" class="img-fluid">
+	</div>
+</footer>
+<!-- footer end -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="%PUBLIC_URL%/config/js/jquery-3.6.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Bootstrap Bundle with Popper -->
+<script src="%PUBLIC_URL%/config/js/bootstrap.bundle.min.js"></script>
+<!-- counter -->
+<script src="%PUBLIC_URL%/config/js/jquery.plugin.min.js"></script>
+<script src="%PUBLIC_URL%/config/js/jquery.countdown.min.js"></script>
+<!-- slick -->
+<script src="%PUBLIC_URL%/config/js/slick.min.js"></script>
+<!-- scrollIt -->
+<script src="%PUBLIC_URL%/config/js/scrollIt.js"></script>
+<!-- ofi -->
+<script src="%PUBLIC_URL%/config/js/ofi.min.js"></script>
+<script src="%PUBLIC_URL%/config/js/script.js"></script>
+</body>
 </html>
