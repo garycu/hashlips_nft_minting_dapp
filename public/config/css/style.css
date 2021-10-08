@@ -531,11 +531,6 @@ a {
 	color: #071A2F;
 	margin: 0;
 }
-
-.learn-more-button {
-	display: flex;
-	justify-content: flex-end;
-}
 /* Services End */
 
 /* Skywalker Start */
@@ -735,24 +730,15 @@ a {
 .our-philosophy-section .our-philosophy-block {
 	margin-bottom: 85px;
 }
-
+/* 
 .our-philosophy-section .our-philosophy-block:nth-child(even) {
 	text-align: right;
 }
 
 .our-philosophy-section .our-philosophy-block:nth-child(even) .row {
 	flex-direction: row-reverse;
-}
+} */
 
-.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h1:before,
-.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h2:before,
-.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h3:before,
-.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h4:before,
-.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h5:before,
-.our-philosophy-section .our-philosophy-block:nth-child(even) .block-title h6:before {
-	right: auto;
-	left: 0;
-}
 /* Our Philosophy End */
 
 /* Mint Section */
