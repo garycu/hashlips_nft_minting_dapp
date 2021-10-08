@@ -321,6 +321,15 @@ function App() {
                         <s.TextDescription
                           style={{ textAlign: "center", color: "var(--accent-text)" }}
                         >
+                          1. View your new SkywalkerZ NFT(s) on &nbsp;
+                          <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                            {CONFIG.MARKETPLACE}
+                          </StyledLink>!
+                        </s.TextDescription>
+                        <s.SpacerSmall />
+                        <s.TextDescription
+                          style={{ textAlign: "center", color: "var(--accent-text)" }}
+                        >
                           View your new SkywalkerZ NFT(s) on &nbsp;
                           <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                             {CONFIG.MARKETPLACE}
