@@ -389,6 +389,7 @@ a {
 /* Banner Start */
 .banner-section {
 	position: relative;
+	margin-top: -30px;
 }
 
 .banner-section .space-earth-img {
@@ -895,7 +896,7 @@ a {
 }
 
 .dream-dao p {
-    font-size: 40px;
+    font-size: 20px;
     line-height: 48px;
 	text-align: center;
 }
@@ -903,7 +904,7 @@ a {
 .dream-dao .image-text .text p {
 	font-weight: 700;
 	margin-bottom: 0;
-	font-size: 35px;
+	font-size: 20px;
 	line-height: 40px;
 	color:#071A2F;
 }

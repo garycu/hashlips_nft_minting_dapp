@@ -52,7 +52,7 @@
 .our-philosophy-block .detail p { font-size: 25px; line-height: 30px; }
 .mint-section .mint-detail p { font-size: 35px; line-height: 45px; }
 
-.dream-dao p {font-size: 35px; line-height: 35px;}
+.dream-dao p {font-size: 30px; line-height: 35px;}
 .dream-dao .image-text .text p {font-size: 30px; line-height: 35px;}
 .fund-section p {font-size: 35px; line-height: 40px;}
 }
@@ -89,7 +89,7 @@
 .mint-section .mint-detail p { font-size: 30px; line-height: 40px; }
 .mint-connect-block .form-control { font-size: 135px; }
 
-.dream-dao p {font-size: 30px; line-height: 30px;}
+.dream-dao p {font-size: 25px; line-height: 30px;}
 .dream-dao .image-text .text p {font-size: 25px; line-height: 30px;}
 .fund-section p {font-size: 30px; line-height: 35px;}
 .dream-dao .heading .image img.head {max-width: 680px;}
@@ -360,8 +360,8 @@
 /* .footer { padding-bottom: 50px; } */
 .footer img { margin-top: -225px; }
 
-.dream-dao p {font-size: 22px; line-height: 28px;}
-.dream-dao .image-text .text p {font-size: 22px; line-height: 28px;}
+.dream-dao p {font-size: 20px; line-height: 28px;}
+.dream-dao .image-text .text p {font-size: 20px; line-height: 28px;}
 .dream-dao .heading .image img.head {max-width: 450px;}
 .dream-dao .heading .image img {max-width: 400px;}
 .dream-dao .image-text .img {height: 250px;}

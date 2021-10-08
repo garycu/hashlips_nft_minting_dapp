@@ -213,11 +213,12 @@ function App() {
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-            <s.TextTitle
+            {data.totalSupply === 0 ? null : <s.TextTitle
               style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px" }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
+            }
           </s.Container>
           <s.SpacerLarge />
           <s.Container
