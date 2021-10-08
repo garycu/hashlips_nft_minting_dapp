@@ -13,6 +13,6 @@
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "OpenSea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/skywalkerz",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/skywalkerz",
   "SHOW_BACKGROUND": false
 }

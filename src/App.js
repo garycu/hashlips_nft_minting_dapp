@@ -330,10 +330,9 @@ function App() {
                         <s.TextDescription
                           style={{ textAlign: "center", color: "var(--accent-text)" }}
                         >
-                          View your new SkywalkerZ NFT(s) on &nbsp;
-                          <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                            {CONFIG.MARKETPLACE}
-                          </StyledLink>!
+                          2. Click <StyledLink target={"_blank"} href="https://discord.gg/eeRPzQD9">
+                            here
+                          </StyledLink> to join the Dream DAO Discord and learn how to become a Founding Member.
                         </s.TextDescription>
                       </div> :
                       <div>
