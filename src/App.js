@@ -121,7 +121,9 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
-  // dispatch(fetchTotalSupply());
+  if (data.totalSupply === 0) {
+    dispatch(fetchTotalSupply());
+  }
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
@@ -321,7 +323,7 @@ function App() {
                         <s.TextDescription
                           style={{ textAlign: "center", color: "var(--accent-text)" }}
                         >
-                          1. View your new SkywalkerZ NFT(s) on &nbsp;
+                          1. View your new SkywalkerZ NFT(s) on&nbsp;
                           <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
                             {CONFIG.MARKETPLACE}
                           </StyledLink>!

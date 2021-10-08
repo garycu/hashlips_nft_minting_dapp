@@ -68,14 +68,19 @@ export const fetchTotalSupply = () => {
     });
     const abi = await abiResponse.json();
 
-    // update to config
-    const smartContractAddress = "0x5b733f8a3209a2eabbe64eba915eb433ad508e1d";
+    const configResponse = await fetch("/config/config.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const config = await configResponse.json();
     
     let totalSupply = 0;
-      const web3 = new Web3("https://rinkeby.infura.io/v3/7c18daa2505046499e29c8f240e38258");
+      const web3 = new Web3(config["INFURA_URL"]);
       const contract = new web3.eth.Contract(
         abi,
-        smartContractAddress // test chain address
+        config["CONTRACT_ADDRESS"]
       );
       const _totalSupply = await contract.methods.totalSupply().call();
       totalSupply = _totalSupply;

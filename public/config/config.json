@@ -1,6 +1,6 @@
 {
-  "CONTRACT_ADDRESS": "0x5b733f8a3209a2eabbe64eba915eb433ad508e1d",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x5b733f8a3209a2eabbe64eba915eb433ad508e1d",
+  "CONTRACT_ADDRESS": "0x433d05ff97e7512d67a9ae628cd8b8e028c2d689",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x433d05ff97e7512d67a9ae628cd8b8e028c2d689",
   "NETWORK": {
     "NAME": "Rinkeby",
     "SYMBOL": "ETH",
@@ -14,5 +14,6 @@
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "OpenSea",
   "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/skywalkerz",
-  "SHOW_BACKGROUND": false
+  "SHOW_BACKGROUND": false,
+  "INFURA_URL": "https://rinkeby.infura.io/v3/7c18daa2505046499e29c8f240e38258"
 }
