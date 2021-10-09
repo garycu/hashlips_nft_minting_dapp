@@ -145,7 +145,7 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("Sorry, something went wrong please try again later. If the issue persists, please message the chatbot at the bottom right side of the screen and a CU team member will assist you.");
         setClaimingNft(false);
       })
       .then((receipt) => {
@@ -228,7 +228,6 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
               padding: 24,
               borderRadius: 24,
               border: "4px solid white",
