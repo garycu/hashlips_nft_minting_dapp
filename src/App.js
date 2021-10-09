@@ -311,7 +311,14 @@ function App() {
                             color: "var(--accent-text)",
                           }}
                         >
-                          {blockchain.errorMsg}
+                          {blockchain.errorMsg}&nbsp;&nbsp;
+                          {/* <StyledButton
+                            onClick={(e) => {
+                              e.preventDefault();
+                            }}
+                          >
+                            GET HELP
+                          </StyledButton> */}
                         </s.TextDescription>
                       </>
                     ) : null}

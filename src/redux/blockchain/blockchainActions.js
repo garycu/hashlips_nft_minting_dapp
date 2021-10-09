@@ -84,10 +84,10 @@ export const connect = () => {
           dispatch(connectFailed(`Change network to ${CONFIG.NETWORK.NAME}.`));
         }
       } catch (err) {
-        dispatch(connectFailed("Something went wrong."));
+        dispatch(connectFailed("Something went wrong. Please message the chatbot or contact gary@civicsunplugged.org for assistance."));
       }
     } else {
-      dispatch(connectFailed("Install Metamask."));
+      dispatch(connectFailed("MetaMask must be installed to mint a SkywalkerZ NFT."));
     }
   };
 };
