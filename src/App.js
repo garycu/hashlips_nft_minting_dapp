@@ -126,6 +126,7 @@ function App() {
   }
 
   const claimNFTs = () => {
+    return;
     let cost = CONFIG.WEI_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
@@ -456,10 +457,10 @@ function App() {
               color: "white",
             }}
           >
-            Contract address: &nbsp;
+            {/* Contract address: &nbsp;
             <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
               {CONFIG.CONTRACT_ADDRESS}
-            </StyledLink>
+            </StyledLink> */}
           </s.TextDescription>
         </s.Container>
       </s.Container>
