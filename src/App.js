@@ -461,6 +461,18 @@ function App() {
               {CONFIG.CONTRACT_ADDRESS}
             </StyledLink>
           </s.TextDescription>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            View collection on&nbsp;
+            <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+              OpenSea
+            </StyledLink>
+          </s.TextDescription>
         </s.Container>
       </s.Container>
     </s.Screen>
