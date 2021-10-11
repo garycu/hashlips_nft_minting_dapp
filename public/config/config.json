@@ -13,7 +13,7 @@
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "OpenSea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/skywalkerz",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/skywalkerz?search[sortAscending]=false&search[sortBy]=CREATED_DATE",
   "SHOW_BACKGROUND": false,
   "INFURA_URL": "https://mainnet.infura.io/v3/7c18daa2505046499e29c8f240e38258"
 }
