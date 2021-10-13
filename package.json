@@ -9,6 +9,7 @@
     "@walletconnect/web3-provider": "^1.6.6",
     "all": "^0.0.0",
     "react": "^17.0.2",
+    "react-app-rewired": "^2.1.8",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
@@ -23,8 +24,8 @@
   "author": "Daniel Eugene Botha (HashLips)",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build"
   },
   "browserslist": {
     "production": [
