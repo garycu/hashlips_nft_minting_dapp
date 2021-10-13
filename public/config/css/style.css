@@ -757,7 +757,7 @@ a {
 
 .mint-section .section-title {
 	position: relative;
-	z-index: 9;
+	z-index: 1;
 	margin-bottom: 20px;
 }
 
