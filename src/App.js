@@ -295,7 +295,7 @@ function App() {
                         color: "var(--accent-text)",
                       }}
                     >
-                      To mint, connect your MetaMask wallet to the {CONFIG.NETWORK.NAME} network. After, you’ll be able to choose how many SkywalkerZ to mint.
+                      To mint, connect your wallet (e.g. MetaMask) to the {CONFIG.NETWORK.NAME} network. After, you’ll be able to choose how many SkywalkerZ to mint.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
