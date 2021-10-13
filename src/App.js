@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./redux/blockchain/blockchainActions";
+import { connectWalletConnect } from "./redux/blockchain/blockchainActions";
 import { fetchData, fetchTotalSupply } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
@@ -145,7 +145,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later. If the issue persists, please message the chatbot at the bottom right side of the screen and a CU team member will assist you.");
+        console.log("err.message: " + err.message);
+
+        if (err.message == "User rejected the transaction") {
+          setFeedback("User rejected the transaction.");
+        } else {
+          setFeedback("Sorry, something went wrong please try again later. If the issue persists, please message the chatbot at the bottom right side of the screen and a CU team member will assist you.");
+        }
         setClaimingNft(false);
       })
       .then((receipt) => {
@@ -295,7 +301,7 @@ function App() {
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();
-                        dispatch(connect());
+                        dispatch(connectWalletConnect());
                         getData();
                       }}
                     >

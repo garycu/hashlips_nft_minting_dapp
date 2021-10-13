@@ -4,6 +4,21 @@ import Web3 from "web3";
 // log
 import { fetchData } from "../data/dataActions";
 
+// walletConnect
+import WalletConnectProvider from "@walletconnect/web3-provider";
+import Web3Modal from "web3modal";
+
+// set chain id and rpc mapping in provider options
+const providerOptions = {
+  walletconnect: {
+    package: WalletConnectProvider,
+    options: {
+      infuraId: "7c18daa2505046499e29c8f240e38258"
+    }
+  }
+}
+
+
 const connectRequest = () => {
   return {
     type: "CONNECTION_REQUEST",
@@ -88,6 +103,63 @@ export const connect = () => {
       }
     } else {
       dispatch(connectFailed("MetaMask must be installed to mint a SkywalkerZ NFT."));
+    }
+  };
+};
+
+export const connectWalletConnect = () => {
+  return async (dispatch) => {
+
+    const web3Modal = new Web3Modal({
+      network: "mainnet", // optional
+      cacheProvider: false, // optional
+      providerOptions // required
+    });
+    
+    const provider = await web3Modal.connect();
+    await web3Modal.toggleModal();
+    
+    // regular web3 provider methods
+    const newWeb3 = new Web3(provider);
+    const accounts = await newWeb3.eth.getAccounts();
+    
+    console.log(accounts);
+
+    dispatch(connectRequest());
+    const abiResponse = await fetch("/config/abi.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const abi = await abiResponse.json();
+    const configResponse = await fetch("/config/config.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const CONFIG = await configResponse.json();
+    if (accounts) {
+      Web3EthContract.setProvider(newWeb3.currentProvider);
+      try {
+        const SmartContractObj = new Web3EthContract(
+          abi,
+          CONFIG.CONTRACT_ADDRESS
+        );
+        dispatch(
+          connectSuccess({
+            account: accounts[0],
+            smartContract: SmartContractObj,
+            web3: newWeb3,
+          })
+        );
+      } catch (err) {
+        console.log(err);
+        dispatch(connectFailed("Something went wrong. Please message the chatbot or contact gary@civicsunplugged.org for assistance."));
+      }
+    } else {
+      dispatch(connectFailed("Couldn't connect to a wallet."));
     }
   };
 };
