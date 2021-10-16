@@ -344,7 +344,7 @@ function App() {
                         <s.TextDescription
                           style={{ textAlign: "center", color: "var(--accent-text)" }}
                         >
-                          2. Click <StyledLink target={"_blank"} href="https://discord.gg/eeRPzQD9">
+                          2. Click <StyledLink target={"_blank"} href="https://discord.gg/t4w6HUgMcM">
                             here
                           </StyledLink> to join the Dream DAO Discord and learn how to become a Founding Member.
                         </s.TextDescription>
