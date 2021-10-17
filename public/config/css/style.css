@@ -127,11 +127,14 @@ a {
 /*========== Section Title Start ==========*/
 .section-title {
 	font-family: 'MontserratBold';
-	font-size: 35px !important;
+	font-size: 35px;
 	line-height: 122px;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
 	margin-bottom: 40px !important;
 }
 
@@ -677,12 +680,11 @@ a {
 }
 
 .faq-section .civics-space {
-	right: 20px;
+	right: 0px;
 	top: 287px;
 }
 
 .faq-section .faq-content {
-	margin-top: 40px;
 	position: relative;
 }
 

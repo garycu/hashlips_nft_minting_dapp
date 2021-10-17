@@ -211,7 +211,7 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 70, backgroundColor: "var(--primary)" }}
+        style={{ padding: 20, backgroundColor: "var(--primary)", paddingBottom: 70 }}
 
       >
         <div class="section-title">
