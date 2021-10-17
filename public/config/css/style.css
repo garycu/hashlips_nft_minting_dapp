@@ -127,13 +127,12 @@ a {
 /*========== Section Title Start ==========*/
 .section-title {
 	font-family: 'MontserratBold';
-	font-size: 100px;
+	font-size: 35px !important;
 	line-height: 122px;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 67px;
-	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+	margin-bottom: 40px !important;
 }
 
 .section-title h1,
@@ -159,7 +158,6 @@ a {
 	color: #071A2F;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .block-title h1,
@@ -324,20 +322,21 @@ a {
 }
 
 .h-navigation ul li a {
-	text-decoration: underline;
-	color: rgba(255,255,255,0.5);
+	text-decoration: none !important;
+	color: #FFFFFF !important;
+	font-weight: bold !important;
 	text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .h-navigation ul li a:hover,
 .h-navigation ul li a.active,
 .h-navigation ul li a.current-menu-item {
-	color: #FFFFFF;
+	color: #FEA176 !important;
 }
 
 .h-navigation ul li.active a,
 .h-navigation ul li.current-menu-item a {
-	color: #FFFFFF;
+	color: #FEA176 !important;
 }
 
 
@@ -944,3 +943,56 @@ a {
 	color: #000000;
 }
 
+
+
+
+
+/*==================================================================*/
+/*========== Flex Box Start ==========*/
+/*==================================================================*/
+
+.flex-container {
+	padding-bottom: 70px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 400px;
+    -ms-flex: 1 0 400px;
+    flex: 1 0 400px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    }
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 400px;
+    -ms-flex: 1 0 400px;
+    flex: 1 0 400px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    }

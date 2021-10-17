@@ -211,11 +211,11 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 50, backgroundColor: "var(--primary)" }}
+        style={{ padding: 70, backgroundColor: "var(--primary)" }}
 
       >
         <div class="section-title">
-          <h2>// MINT YOUR SKYWALKER //</h2>
+          <h2>// MINT YOUR SKYWALKERZ //</h2>
         </div>
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
