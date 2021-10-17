@@ -368,7 +368,6 @@
 .fund-section p {font-size: 22px; line-height: 28px;}
 .fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
 .fund-section .heading .image img {max-width: 750px;}
-.fund-section .image-text .img img {width: 240px; height: 240px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -437,7 +436,6 @@
 .fund-section p {font-size: 20px; line-height: 25px;}
 .fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
 .fund-section .heading .image img {max-width: 575px;}
-.fund-section .image-text .img img {width: 195px; height: 195px;}
 
 }
 
@@ -637,7 +635,6 @@
 .fund-section p {font-size: 18px; line-height: 25px;}
 .fund-section .image-text .text span {font-size: 18px; line-height: 25px;}
 .fund-section .heading .image img {max-width: 100%;}
-.fund-section .image-text .img img {width: 290px; height: 290px;}
 .fund-section .image-text {margin-bottom: 40px;}
 
 }
