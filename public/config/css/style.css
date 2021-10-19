@@ -995,3 +995,26 @@ a {
     -ms-flex-item-align: center;
     align-self: center;
     }
+
+/*==================================================================*/
+/*========== Intro pane ==========*/
+/*==================================================================*/
+
+	.intro-text p {
+		font-size: 26px;
+		text-align: center;
+	}
+	.intro-text-small p {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.helper {
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.big-logo {
+		text-align: center;
+	}

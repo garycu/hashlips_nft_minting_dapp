@@ -438,22 +438,12 @@ function App() {
             style={{
               textAlign: "center",
               color: "white",
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "white",
+              width: 500,
+              maxWidth: "70vw"
             }}
           >
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
+            successfully mint your NFT. We recommend that you don't lower it.
           </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription
@@ -462,9 +452,9 @@ function App() {
               color: "white",
             }}
           >
-            Contract address: &nbsp;
+            View the contract on&nbsp;
             <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-              {CONFIG.CONTRACT_ADDRESS}
+              Etherscan
             </StyledLink>
           </s.TextDescription>
           <s.SpacerSmall />
@@ -477,6 +467,18 @@ function App() {
             View collection on&nbsp;
             <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
               OpenSea
+            </StyledLink>
+          </s.TextDescription>
+          <s.SpacerSmall />
+          <s.TextDescription
+            style={{
+              textAlign: "center",
+              color: "white",
+            }}
+          >
+            View a step-by-step guide for minting&nbsp;
+            <StyledLink target={"_blank"} href={CONFIG.MINT_GUIDE}>
+              here
             </StyledLink>
           </s.TextDescription>
         </s.Container>
