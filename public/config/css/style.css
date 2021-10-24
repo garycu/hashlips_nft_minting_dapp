@@ -1025,14 +1025,7 @@ a {
 /*==================================================================*/
 
 
-	html {
-		height  : 100%;
-		overflow: hidden;
-		position: relative;
-	}
 	body {
-		height  : 100%;
-		overflow: auto;
 		overflow-x: hidden;
 		position: relative;
 	}
