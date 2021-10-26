@@ -37,7 +37,8 @@ $(document).ready(function() {
 	// }
 
 	/* CounterDown Timer Start */
-	$('.custom_timer').countdown({until: new Date(1633960800 * 1000), format: 'DHMS', padZeroes: true, compact: true});
+	// Nov 1st, 11 am ET
+	$('.custom_timer').countdown({until: new Date(1635768000 * 1000), format: 'DHMS', padZeroes: true, compact: true});
 	/* CounterDown Timer End */
 
 	/* Skywalker Carousel */
