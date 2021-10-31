@@ -94,6 +94,12 @@
 .fund-section p {font-size: 30px; line-height: 35px;}
 .dream-dao .heading .image img.head {max-width: 680px;}
 .fund-section .heading .image img {max-width: 992px;}
+
+.dream-dao-block { margin-bottom: 150px; }
+.dream-dao .dream-dao-image-detail p { font-size: 40px; line-height: 51px; }
+.dream-dao-block .section-title { font-size: 70px; line-height: 88px; }
+.dream-dao .learn-more-button { margin-top: 70px; }
+
 }
 
 @media (min-width: 1500px) and (max-width: 1599px){
@@ -133,6 +139,12 @@
 .fund-section p {font-size: 30px; line-height: 35px;}
 .dream-dao .heading .image img.head {max-width: 600px;}
 .fund-section .heading .image img {max-width: 900px;}
+
+.dream-dao-block { margin-bottom: 125px; }
+.dream-dao .dream-dao-image-detail p { font-size: 40px; line-height: 51px; }
+.dream-dao-block .section-title { font-size: 65px; line-height: 80px; }
+.dream-dao .learn-more-button { margin-top: 70px; }
+
 }
 
 @media (min-width: 1400px) and (max-width: 1499px){
@@ -191,6 +203,15 @@
 .fund-section p {font-size: 25px; line-height: 30px;}
 .fund-section .image-text .text span {font-size: 25px; line-height: 30px;}
 .fund-section .heading .image img {max-width: 900px;}
+
+.dream-dao-block { margin-bottom: 100px; padding-left: 175px; }
+.dream-dao .dream-dao-image-detail { padding-bottom: 35px; }
+.dream-dao .dream-dao-list { padding-top: 35px; }
+.dream-dao-block .icon { width: 100px; }
+.dream-dao .dream-dao-image-detail p { font-size: 35px; line-height: 45px; }
+.dream-dao-block .section-title { font-size: 50px; line-height: 60px; }
+.dream-dao-block .detail p { font-size: 25px; line-height: 30px; }
+.dream-dao .learn-more-button { margin-top: 50px; }
 }
 
 @media (min-width: 1300px) and (max-width: 1399px){
@@ -248,6 +269,16 @@
 .fund-section p {font-size: 22px; line-height: 28px;}
 .fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
 .fund-section .heading .image img {max-width: 900px;}
+
+.dream-dao-block { margin-bottom: 70px; padding-left: 175px; }
+.dream-dao .dream-dao-image-detail { padding-bottom: 25px; }
+.dream-dao .dream-dao-list { padding-top: 25px; }
+.dream-dao-block .icon { width: 100px; }
+.dream-dao .dream-dao-image-detail p { font-size: 30px; line-height: 40px; }
+.dream-dao-block .section-title { font-size: 50px; line-height: 60px; }
+.dream-dao-block .detail p { font-size: 25px; line-height: 30px; }
+.dream-dao .learn-more-button { margin-top: 50px; }
+
 }
 
 @media (min-width: 1200px) and (max-width: 1299px){
@@ -305,6 +336,16 @@
 .fund-section p {font-size: 22px; line-height: 28px;}
 .fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
 .fund-section .heading .image img {max-width: 750px;}
+
+.dream-dao-block { margin-bottom: 70px; padding-left: 175px; }
+.dream-dao .dream-dao-image-detail { padding-bottom: 25px; }
+.dream-dao .dream-dao-list { padding-top: 25px; }
+.dream-dao-block .icon { width: 100px; }
+.dream-dao .dream-dao-image-detail p { font-size: 30px; line-height: 40px; }
+.dream-dao-block .section-title { font-size: 50px; line-height: 60px; }
+.dream-dao-block .detail p { font-size: 25px; line-height: 30px; }
+.dream-dao .learn-more-button { margin-top: 50px; }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -368,6 +409,18 @@
 .fund-section p {font-size: 22px; line-height: 28px;}
 .fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
 .fund-section .heading .image img {max-width: 750px;}
+
+.dream-dao { padding-bottom: 25px; }
+.dream-dao-block { margin-bottom: 50px; padding-left: 100px; }
+.dream-dao .dream-dao-image-detail { padding-bottom: 25px; }
+.dream-dao .dream-dao-list { padding-top: 25px; }
+.dream-dao-block .icon { width: 70px; }
+.dream-dao .dream-dao-image-detail p { font-size: 25px; line-height: 30px; }
+.dream-dao-block .section-title { font-size: 40px; line-height: 50px; }
+.dream-dao-block .detail { padding-left: 30px; }
+.dream-dao-block .detail p { font-size: 20px; line-height: 25px; }
+.dream-dao .learn-more-button { margin-top: 50px; }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px){
@@ -437,6 +490,17 @@
 .fund-section p {font-size: 20px; line-height: 25px;}
 .fund-section .image-text .text span {font-size: 20px; line-height: 28px;}
 .fund-section .heading .image img {max-width: 575px;}
+
+.dream-dao { padding-bottom: 25px; }
+.dream-dao-block { margin-bottom: 50px; padding-left: 100px; }
+.dream-dao .dream-dao-image-detail { padding-bottom: 25px; }
+.dream-dao .dream-dao-list { padding-top: 25px; }
+.dream-dao-block .icon { width: 70px; }
+.dream-dao .dream-dao-image-detail p { font-size: 18px; line-height: 25px; }
+.dream-dao-block .section-title { font-size: 30px; line-height: 40px; }
+.dream-dao-block .detail { padding-left: 20px; border-width: 5px; }
+.dream-dao-block .detail p { font-size: 18px; line-height: 25px; }
+.dream-dao .learn-more-button { margin-top: 30px; }
 
 }
 
@@ -602,6 +666,16 @@
 .fund-section .heading .image img {max-width: 100%;}
 .fund-section .image-text .img img {width: auto; height: auto;}
 
+.dream-dao { padding-bottom: 25px; }
+.dream-dao-block { margin-bottom: 30px; padding: 0; }
+.dream-dao .dream-dao-image-detail { padding-bottom: 25px; }
+.dream-dao .dream-dao-list { padding-top: 25px; }
+.dream-dao-block .icon { width: 70px; position: relative; left: auto; top: auto; margin-bottom: 20px; }
+.dream-dao .dream-dao-image-detail p { font-size: 18px; line-height: 25px; }
+.dream-dao-block .section-title { font-size: 25px; line-height: 30px; }
+.dream-dao-block .detail { padding: 0; border: none; }
+.dream-dao-block .detail p { font-size: 18px; line-height: 25px; }
+.dream-dao .learn-more-button { margin-top: 30px; }
 }
 
 /*---------- Small Mobile , IPhone Start ----------*/

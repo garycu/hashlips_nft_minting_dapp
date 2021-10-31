@@ -132,8 +132,6 @@ a {
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
 	margin-top: 20px;
 	margin-bottom: 40px !important;
 }
@@ -878,25 +876,103 @@ a {
 
 /* dream-dao */
 
+/* dream-dao */
+.dream-dao {
+	padding: 0 0 48px;
+	padding-top: 40px;
+}
+
 .dream-dao .heading .image img.head {
 	max-width: 870px;
 }
 
-.dream-dao p {
-    font-size: 20px;
+/* .dream-dao p {
+    font-size: 40px;
     line-height: 48px;
 	text-align: center;
-}
+} */
 
 .dream-dao .image-text .text p {
+	font-weight: 700;
 	margin-bottom: 0;
-	font-size: 20px;
+	font-size: 35px;
 	line-height: 40px;
 	color:#071A2F;
 }
 
 .dream-dao .image-text .img {
 	height: 375px;
+}
+
+.dream-dao .dream-dao-image-detail {
+	padding-bottom: 60px;
+}
+
+.dream-dao .dream-dao-image-detail .image {
+	text-align: center;
+}
+
+.dream-dao .dream-dao-image-detail p {
+	font-size: 50px;
+	line-height: 61px;
+	color: #000000;
+	margin-bottom: 30px;
+}
+
+.dream-dao .dream-dao-image-detail p b {
+	font-family: 'MontserratBold';
+}
+
+.dream-dao .dream-dao-list {
+	padding-top: 60px;
+}
+
+.dream-dao .learn-more-button {
+	justify-content: center;
+	margin-top: 75px;
+}
+
+.dream-dao-block {
+	position: relative;
+	padding-left: 216px;
+	margin-bottom: 270px;
+}
+
+.dream-dao-block:last-child {
+	margin: 0;
+}
+
+.dream-dao-block .icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 160px;
+}
+
+.dream-dao-block .section-title {
+	font-size: 80px;
+	line-height: 98px;
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+.dream-dao-block .detail {
+	padding-left: 40px;
+	border-left: 9px solid #071A2F;
+}
+
+.dream-dao-block .detail p {
+	font-size: 30px;
+	line-height: 37px;
+	color: #000000;
+}
+
+.dream-dao-block .detail p b {
+	font-family: 'MontserratBold';
+}
+
+.dream-dao h3 {
+	color: black;
 }
 
 /* who we fund */
