@@ -460,7 +460,17 @@ a {
 
 /* Services Start */
 .services-section {
-	padding: 79px 45px 189px;
+	/* padding: 79px 45px 189px; */
+	padding: 0 45px 100px;
+}
+
+.services-section .section-title {
+	text-align: left;
+	margin: 0 0 20px;
+}
+
+.services-section .section-title img {
+	width: 300px;
 }
 
 .services-section .row {
@@ -477,26 +487,33 @@ a {
 
 .services-section .service-block {
 	position: relative;
-	padding-left: 88px;
-	margin-bottom: 25px;
+	/* padding-left: 88px; */
+	padding-left: 92px;
+	/* margin-bottom: 25px; */
+	margin-bottom: 70px;
+}
+
+.services-section .service-block:last-child {
+	margin-bottom: 0;
 }
 
 .services-section .service-block .icon {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 66px;
+	/* width: 66px;
 	height: 75px;
-	padding: 12px;
+	padding: 12px; */
+	width: 75px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #071A2F;
+	/* background-color: #071A2F;
 	border-radius: 26px;
 	-webkit-border-radius: 26px;
 	-moz-border-radius: 26px;
 	-ms-border-radius: 26px;
-	-o-border-radius: 26px;
+	-o-border-radius: 26px; */
 }
 
 .services-section .service-block .icon img {
@@ -530,6 +547,17 @@ a {
 	line-height: 37px;
 	color: #071A2F;
 	margin: 0;
+}
+
+.services-section .service-block p b {
+	font-family: 'MontserratBold';
+}
+
+.services-section .learn-more-button {
+	justify-content: center;
+	margin-top: 65px;
+	position: relative;
+	z-index: 9;
 }
 /* Services End */
 
