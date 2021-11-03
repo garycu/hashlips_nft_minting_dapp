@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connectWalletConnect } from "./redux/blockchain/blockchainActions";
-import { fetchData, fetchTotalSupply } from "./redux/data/dataActions";
+import { fetchData, fetchTotalSupply, fetchEthPrice } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
@@ -121,6 +121,10 @@ function App() {
     SHOW_BACKGROUND: false,
   });
 
+  if (data.ethPrice === 0) {
+    dispatch(fetchEthPrice());
+  }
+
   if (data.totalSupply === 0) {
     dispatch(fetchTotalSupply());
   }
@@ -221,11 +225,18 @@ function App() {
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-            {data.totalSupply === 0 ? null : <s.TextTitle
-              style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px" }}
+            {(data.totalSupply === 0 || data.ethPrice === 0) ? null : <div>
+            <s.TextTitle
+              style={{ textAlign: "center", color: "var(--accent-text)", fontSize: "250%", padding: "25px", paddingBottom: "0" , color: "#FEA176", fontWeight: "bold"}}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              ${Math.round(data.ethPrice * data.totalSupply / 10).toLocaleString("en-US")}
             </s.TextTitle>
+            <s.TextTitle
+              style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px", paddingTop: "0" }}
+            >
+              Raised for Gen Z
+            </s.TextTitle>
+            </div>
             }
           </s.Container>
           <s.SpacerLarge />

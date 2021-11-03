@@ -30,6 +30,13 @@ const fetchTotalSupplySuccess = (payload) => {
   }
 }
 
+const fetchEthPriceSuccess = (payload) => {
+  return {
+    type: 'CHECK_ETH_PRICE_SUCCESS',
+    payload: payload,
+  }
+}
+
 export const fetchData = () => {
   return async (dispatch) => {
     dispatch(fetchDataRequest());
@@ -86,5 +93,20 @@ export const fetchTotalSupply = () => {
       totalSupply = _totalSupply;
 
     dispatch(fetchTotalSupplySuccess({totalSupply: totalSupply}));
+  }
+}
+
+export const fetchEthPrice = () => {
+  return async (dispatch) => {
+
+    const response = await fetch("https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const json = await response.json();
+
+    dispatch(fetchEthPriceSuccess({ethPrice: json['USD']}));
   }
 }

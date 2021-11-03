@@ -1,6 +1,7 @@
 const initialState = {
   loading: false,
   totalSupply: 0,
+  ethPrice: 0,
   cost: 0,
   error: false,
   errorMsg: "",
@@ -8,6 +9,11 @@ const initialState = {
 
 const dataReducer = (state = initialState, action) => {
   switch (action.type) {
+    case "CHECK_ETH_PRICE_SUCCESS":
+      return {
+        ...state,
+        ethPrice: action.payload.ethPrice,
+      };
     case "CHECK_TOTAL_SUPPLY_SUCCESS":
       return {
         ...state,
