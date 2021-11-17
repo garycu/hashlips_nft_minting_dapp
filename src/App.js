@@ -99,7 +99,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
+  const [feedback, setFeedback] = useState(`Click 'MINT' to mint your NFT.`);
   const [onSuccessScreen, setOnSuccessScreen] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
@@ -252,7 +252,29 @@ function App() {
               backgroundImage: (claimingNft ? 'url("/config/images/spaceanimation2.gif")' : 'url("/config/images/darkstars.png")'),
             }}
           >
-            <s.TextTitle
+            <s.SpacerSmall />
+            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+              <>
+                <s.TextTitle
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  The sale has ended.
+                </s.TextTitle>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                  You can still find {CONFIG.NFT_NAME} on&nbsp;
+                  <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                  {CONFIG.MARKETPLACE}
+                </StyledLink>
+                </s.TextDescription>
+              </>
+            ) : (
+              <>
+                {(onSuccessScreen || claimingNft) ? null :
+                
+                  <div>
+                    <s.TextTitle
               style={{
                 textAlign: "center",
                 fontSize: 35,
@@ -267,28 +289,6 @@ function App() {
                   {CONFIG.NETWORK.SYMBOL}</div>}</div>
               }
             </s.TextTitle>
-            <s.SpacerSmall />
-            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
-              <>
-                <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  The sale has ended.
-                </s.TextTitle>
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  You can still find {CONFIG.NFT_NAME} on
-                </s.TextDescription>
-                <s.SpacerSmall />
-                <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                  {CONFIG.MARKETPLACE}
-                </StyledLink>
-              </>
-            ) : (
-              <>
-                {(onSuccessScreen || claimingNft) ? null :
-                  <div>
                     <s.TextDescription
                       style={{ textAlign: "center", color: "var(--accent-text)" }}
                     >
@@ -304,9 +304,12 @@ function App() {
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
+                        paddingLeft: "25px",
+                        paddingRight: "25px"
                       }}
                     >
-                      To mint, connect your wallet (e.g. MetaMask) to the {CONFIG.NETWORK.NAME} network. After, you’ll be able to choose how many SkywalkerZ to mint.
+                      To mint, connect your wallet (e.g. MetaMask) to the {CONFIG.NETWORK.NAME} network.
+                      There are {255 - data.totalSupply} SkywalkerZ remaining in the Genesis release. A SkywalkerZ is required to become a founding voting member of the Dream DAO.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
@@ -388,7 +391,7 @@ function App() {
                             <s.SpacerMedium />
                             {claimingNft ? null :
                               <div>
-                                <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                {/* <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                   <StyledRoundButton
                                     style={{ lineHeight: 0.4 }}
                                     disabled={claimingNft ? 1 : 0}
@@ -418,7 +421,7 @@ function App() {
                                   >
                                     +
                                   </StyledRoundButton>
-                                </s.Container>
+                                </s.Container> */}
                                 <s.SpacerSmall />
                                 <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                   <StyledButton
@@ -429,7 +432,7 @@ function App() {
                                       getData();
                                     }}
                                   >
-                                    {claimingNft ? "BUSY" : "BUY"}
+                                    {claimingNft ? "BUSY" : "MINT"}
                                   </StyledButton>
                                 </s.Container>
                               </div>}
@@ -457,7 +460,7 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower it.
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription
+          {/* <s.TextDescription
             style={{
               textAlign: "center",
               color: "white",
@@ -468,7 +471,7 @@ function App() {
               Etherscan
             </StyledLink>
           </s.TextDescription>
-          <s.SpacerSmall />
+          <s.SpacerSmall /> */}
           <s.TextDescription
             style={{
               textAlign: "center",
