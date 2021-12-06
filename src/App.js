@@ -309,7 +309,7 @@ function App() {
                       }}
                     >
                       To mint, connect your wallet (e.g. MetaMask) to the {CONFIG.NETWORK.NAME} network.
-                      There are {265 - data.totalSupply} SkywalkerZ remaining in the Genesis release. A SkywalkerZ is required to become a founding voting member of the Dream DAO.
+                      There are {270 - data.totalSupply} SkywalkerZ remaining in the Genesis release. A SkywalkerZ is required to become a founding voting member of the Dream DAO.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
