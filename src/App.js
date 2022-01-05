@@ -229,7 +229,7 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", color: "var(--accent-text)", fontSize: "250%", padding: "25px", paddingBottom: "0" , color: "#FEA176", fontWeight: "bold"}}
             >
-              ${Math.round(data.ethPrice * data.totalSupply / 10).toLocaleString("en-US")}
+              ${Math.round(data.ethPrice * (data.totalSupply - 42) / 10).toLocaleString("en-US")}
             </s.TextTitle>
             <s.TextTitle
               style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px", paddingTop: "0" }}
