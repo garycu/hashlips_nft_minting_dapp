@@ -234,7 +234,7 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px", paddingTop: "0" }}
             >
-              Raised for Gen Z
+              Raised for Dream DAO!
             </s.TextTitle>
             </div>
             }
