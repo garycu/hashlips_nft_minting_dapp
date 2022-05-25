@@ -215,13 +215,10 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 20, backgroundColor: "var(--primary)", paddingBottom: 70 }}
+        style={{ padding: 20, backgroundColor: "var(--primary)", paddingBottom: 70, paddingTop: 100 }}
 
       >
-        <div class="section-title">
-          <h2>// MINT YOUR SKYWALKERZ //</h2>
-        </div>
-        <s.SpacerSmall />
+      <s.SpacerLarge />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
@@ -391,7 +388,7 @@ function App() {
                             <s.SpacerMedium />
                             {claimingNft ? null :
                               <div>
-                                {/* <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                   <StyledRoundButton
                                     style={{ lineHeight: 0.4 }}
                                     disabled={claimingNft ? 1 : 0}
@@ -421,7 +418,7 @@ function App() {
                                   >
                                     +
                                   </StyledRoundButton>
-                                </s.Container> */}
+                                </s.Container>
                                 <s.SpacerSmall />
                                 <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                   <StyledButton
