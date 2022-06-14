@@ -215,26 +215,13 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 20, backgroundColor: "var(--primary)", paddingBottom: 70, paddingTop: 100 }}
+        style={{ padding: 20, backgroundColor: "var(--primary)", paddingBottom: 70, paddingTop: 120 }}
 
       >
       <s.SpacerLarge />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
-            {(data.totalSupply === 0 || data.ethPrice === 0) ? null : <div>
-            <s.TextTitle
-              style={{ textAlign: "center", color: "var(--accent-text)", fontSize: "250%", padding: "25px", paddingBottom: "0" , color: "#FEA176", fontWeight: "bold"}}
-            >
-              ${Math.round(data.ethPrice * (data.totalSupply - 42) / 10).toLocaleString("en-US")}
-            </s.TextTitle>
-            <s.TextTitle
-              style={{ textAlign: "center", color: "var(--accent-text)", padding: "25px", paddingTop: "0" }}
-            >
-              Raised for Dream DAO!
-            </s.TextTitle>
-            </div>
-            }
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -306,7 +293,7 @@ function App() {
                       }}
                     >
                       To mint, connect your wallet (e.g. MetaMask) to the {CONFIG.NETWORK.NAME} network.
-                      There are {300 - data.totalSupply} SkywalkerZ remaining in the Genesis release. A SkywalkerZ is required to apply to become a voting member of the Dream DAO.
+                      A SkywalkerZ is required to apply to become a voting member of the Dream DAO.
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
