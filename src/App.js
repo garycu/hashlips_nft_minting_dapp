@@ -219,6 +219,19 @@ function App() {
 
       >
       <s.SpacerLarge />
+
+      <s.TextTitle
+              style={{
+                textAlign: "center",
+                fontSize: 35,
+                fontWeight: "bold",
+                color: "var(--accent-text)",
+                lineHeight: "75%",
+                padding: "25px",
+              }}
+            >
+      <p>Minting for batch #2 closes June 22nd</p>
+      </s.TextTitle>
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
@@ -292,8 +305,11 @@ function App() {
                         paddingRight: "25px"
                       }}
                     >
+                      <p>
                       To mint, connect your wallet (e.g. MetaMask) to the {CONFIG.NETWORK.NAME} network.
                       A SkywalkerZ is required to apply to become a voting member of the Dream DAO.
+                      </p>
+                <s.SpacerSmall />
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
