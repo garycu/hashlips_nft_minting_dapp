@@ -220,7 +220,7 @@ function App() {
       >
       <s.SpacerLarge />
 
-      <s.TextTitle
+      {/* <s.TextTitle
               style={{
                 textAlign: "center",
                 fontSize: 35,
@@ -231,7 +231,7 @@ function App() {
               }}
             >
       <p>Minting for batch #2 closes June 22nd</p>
-      </s.TextTitle>
+      </s.TextTitle> */}
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
